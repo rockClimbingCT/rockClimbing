@@ -1,0 +1,36 @@
+
+/*banner*/
+.banner-wrap{height: 480px;background: #f1f1f1;}
+
+/*主要内容区域*/
+.container-wrap{background: url("../img/indexbg.jpg") center top;}
+.container{padding: 134px 0 40px 0;}
+@media (min-width: 1200px){
+    .container {
+        width: 1200px;
+    }
+}
+
+.indexMain-BgWhite{height:100%;background: #fff;}
+.indexMain-box{margin-bottom: -32px;position: relative;top: -32px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
