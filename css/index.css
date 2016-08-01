@@ -3,7 +3,7 @@
 .banner-wrap{height: 480px;background: #f1f1f1;}
 
 /*主要内容区域*/
-.container-wrap{background: url("../img/indexbg.jpg") center top;}
+.container-wrap{background: url("../img/indexbg.jpg") center top;color: red;}
 .container{padding: 134px 0 40px 0;}
 @media (min-width: 1200px){
     .container {
@@ -11,18 +11,19 @@
     }
 }
 
-.indexMain-BgWhite{height:100%;background: #fff;}
+.indexMain-BgWhite{height:100%;background: #fff;padding-bottom: 40px;}
 .indexMain-box{margin-bottom: -32px;position: relative;top: -32px;}
 
 
+.competition-apply{height: 100px;background: #f1f1f1;}
+.competition-among{height: 100px;background: #f6f6f6;}
+.carousel-img{height: 100px;background: #31b0d5;}
+.competition-grade{height: 100px;background: #9acfea;}
 
+.music-play{height: 100px;background: #1b6d85;}
 
-
-
-
-
-
-
+.competition-agenda{height: 200px;background: #204d74;}
+.competition-result{height: 200px;background: #245580;}
 
 
 
