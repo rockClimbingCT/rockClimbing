@@ -4,52 +4,57 @@
     <title>Bootstrap 实例 - 响应式的导航栏</title>
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/top.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<!--头部导航-->
-<nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                data-target="#example-navbar-collapse">
-            <span class="sr-only">切换导航</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">W3Cschool</a>
-    </div>
-    <div class="collapse navbar-collapse" id="example-navbar-collapse">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">iOS</a></li>
-            <li><a href="#">SVN</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    Java <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">jmeter</a></li>
-                    <li><a href="#">EJB</a></li>
-                    <li><a href="#">Jasper Report</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">分离的链接</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">另一个分离的链接</a></li>
+<div class="g-header">
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle g-fun" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                <a class="navbar-brand g-logo" href="javascript:;"><img src="img/logo.png" alt=""/></a>
+            </div>
+            <span class="g-arrow"></span>
+            <div class="collapse navbar-collapse" >
+                <ul class="nav navbar-nav">
+                    <li class="g-nav-li active"><a href="javascript:;"><em>首页</em><span>HOME</span></a></li>
+                    <li class="g-nav-li"><a href="javascript:;"><em>赛事报名</em><span>REGISTER</span></a></li>
+                    <li class="g-nav-li"><a href="javascript:;"><em>赛事安排</em><span>CALENDAR</span></a></li>
+                    <li class="g-nav-li"><a href="javascript:;"><em>赛事成绩</em><span>RESULT</span></a></li>
+                    <li class="g-nav-li"><a href="javascript:;"><em>运动员查询</em><span>ATHLETES</span></a></li>
+                    <li class="g-nav-li"><a href="javascript:;"><em>关于我们</em><span>ABOUT US</span></a></li>
+                    <li class="g-login"><a href="javascript:;"><em><i></i>登录</em><span>LOGIN</span></a></li>
                 </ul>
-            </li>
+            </div>
+        </nav>
+    </div>
+</div>
+<div id="carousel-ban" class="g-ban-slide carousel slide" data-ride="carousel">
+    <div class="g-ban-pic">
+        <ul class="carousel-inner" role="listbox">
+            <li class="active item"><a href="javascript:;"><img src="img/ban1.jpg" alt=""/><i></i></a></li>
+            <li class="item"><a href="javascript:;"><img src="img/ban1.jpg" alt=""/><i></i></a></li>
+            <li class="item"><a href="javascript:;"><img src="img/ban1.jpg" alt=""/><i></i></a></li>
         </ul>
     </div>
-</nav>
-
-<!--banner-->
-<!-- <div class="banner-wrap">
-    <div class="container">
-        轮播图
+    <a class="g-ban-arrow carousel-control left" href="#carousel-ban" role="button" data-slide="prev"></a>
+    <a class="g-ban-arrow carousel-control right" href="#carousel-ban" role="button" data-slide="next"></a>
+    <div class="g-ban-filter">
+        <div class="g-ban-filter-con">
+            <div class="g-ban-btn">
+                <ul class="clearfix carousel-indicators">
+                    <li class="active" data-target="#carousel-ban" data-slide-to="0"></li>
+                    <li data-target="#carousel-ban" data-slide-to="1"></li>
+                    <li data-target="#carousel-ban" data-slide-to="2"></li>
+                </ul>
+            </div>
+        </div>
     </div>
-</div> -->
+</div>
 
 
 <!--主要内容区域-->
@@ -534,7 +539,7 @@
                             <div class="con-action-top">
                                 <div class="con-top-title clearfix">
                                     <span class="con-top-text fl">年度全国攀岩运动员男子组积分Top10</span>
-                                    <div class="con-select fl con-select-top">
+                                    <div class="con-select fr con-select-top">
                                         <span class="con-select-text"><em>2016</em><i></i></span>
                                         <div class="con-select-item none">
                                             <ul class="con-select-list">
@@ -546,191 +551,73 @@
                                     </div>
                                 </div>
                                 <div class="con-action-tab">
-                                    <ul class="con-action-list clearfix">
-                                        <li class="cur">难度</li>
-                                        <li>攀石</li>
-                                        <li>速度</li>
-                                    </ul>
-                                    <div class="con-action-table">
-                                        <div class="con-result-row con-result-thead clearfix cur">
-                                            <span>姓名</span>
-                                            <span>总积分</span>
-                                            <span>排名</span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">1</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">2</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">3</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">4</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">5</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">6</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">7</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">8</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">9</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">10</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <a href="javascript:;" class="con-result-all">查看全部排名>></a>
-                                        </div>
-                                    </div>
-                                    <div class="con-action-table none">
-                                        <div class="con-result-row con-result-thead clearfix cur">
-                                            <span>姓名</span>
-                                            <span>总积分</span>
-                                            <span>排名</span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨2</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">1</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">2</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">3</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">4</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">5</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">6</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">7</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">8</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">9</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">10</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <a href="javascript:;" class="con-result-all">查看全部排名>></a>
-                                        </div>
-                                    </div>
-                                    <div class="con-action-table none">
-                                        <div class="con-result-row con-result-thead clearfix cur">
-                                            <span>姓名</span>
-                                            <span>总积分</span>
-                                            <span>排名</span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨3</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">1</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">2</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">3</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">4</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">5</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">6</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">7</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">8</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">9</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">10</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <a href="javascript:;" class="con-result-all">查看全部排名>></a>
-                                        </div>
-                                    </div>
+                                    <table class="paiming-table">
+                                        <thead>
+                                        <tr>
+                                            <th class="cur">难度</th>
+                                            <th>攀石</th>
+                                            <th>速度</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="cur">姓名</td>
+                                            <td>总积分</td>
+                                            <td>排名</td>
+                                        </tr>
+                                        <tr>
+                                            <td>瞿海滨4</td>
+                                            <td>80.0</td>
+                                            <td><i class="con-result-rate">1</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>瞿海滨4</td>
+                                            <td>80.0</td>
+                                            <td><i class="con-result-rate">2</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>瞿海滨4</td>
+                                            <td>80.0</td>
+                                            <td><i class="con-result-rate">3</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>瞿海滨4</td>
+                                            <td>80.0</td>
+                                            <td><i class="con-result-rate cur">4</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>瞿海滨4</td>
+                                            <td>80.0</td>
+                                            <td><i class="con-result-rate cur">5</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>瞿海滨4</td>
+                                            <td>80.0</td>
+                                            <td><i class="con-result-rate cur">6</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>瞿海滨4</td>
+                                            <td>80.0</td>
+                                            <td><i class="con-result-rate cur">7</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>瞿海滨4</td>
+                                            <td>80.0</td>
+                                            <td><i class="con-result-rate cur">8</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>瞿海滨4</td>
+                                            <td>80.0</td>
+                                            <td><i class="con-result-rate cur">9</i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>瞿海滨4</td>
+                                            <td>80.0</td>
+                                            <td><i class="con-result-rate cur">10</i></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <a href="javascript:;" class="load-more">查看全部排名>></a>
                                 </div>
                             </div>
                             <div class="con-slide con-slide-m con-slide-m2">
@@ -750,7 +637,7 @@
                             <div class="con-action-top">
                                 <div class="con-top-title clearfix">
                                     <span class="con-top-text fl">年度全国攀岩运动员男子组积分Top10</span>
-                                    <div class="con-select fl con-select-top">
+                                    <div class="con-select fr con-select-top">
                                         <span class="con-select-text"><em>2016</em><i></i></span>
                                         <div class="con-select-item none">
                                             <ul class="con-select-list">
@@ -762,191 +649,73 @@
                                     </div>
                                 </div>
                                 <div class="con-action-tab">
-                                    <ul class="con-action-list clearfix">
-                                        <li class="cur">难度</li>
-                                        <li>攀石</li>
-                                        <li>速度</li>
-                                    </ul>
-                                    <div class="con-action-table">
-                                        <div class="con-result-row con-result-thead clearfix cur">
-                                            <span>姓名</span>
-                                            <span>总积分</span>
-                                            <span>排名</span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨4</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">1</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">2</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">3</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">4</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">5</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">6</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">7</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">8</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">9</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">10</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <a href="javascript:;" class="con-result-all">查看全部排名>></a>
-                                        </div>
-                                    </div>
-                                    <div class="con-action-table none">
-                                        <div class="con-result-row con-result-thead clearfix cur">
-                                            <span>姓名</span>
-                                            <span>总积分</span>
-                                            <span>排名</span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨5</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">1</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">2</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">3</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">4</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">5</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">6</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">7</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">8</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">9</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">10</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <a href="javascript:;" class="con-result-all">查看全部排名>></a>
-                                        </div>
-                                    </div>
-                                    <div class="con-action-table none">
-                                        <div class="con-result-row con-result-thead clearfix cur">
-                                            <span>姓名</span>
-                                            <span>总积分</span>
-                                            <span>排名</span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨6</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">1</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">2</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate">3</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">4</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">5</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">6</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">7</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">8</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">9</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <span><a href="javascript:;">瞿海滨</a></span>
-                                            <span class="con-action-num">80.0</span>
-                                            <span><i class="con-result-rate cur">10</i></span>
-                                        </div>
-                                        <div class="con-result-row clearfix">
-                                            <a href="javascript:;" class="con-result-all">查看全部排名>></a>
-                                        </div>
-                                    </div>
+                                    <table class="paiming-table">
+                                        <thead>
+                                            <tr>
+                                                <th class="cur">难度</th>
+                                                <th>攀石</th>
+                                                <th>速度</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="cur">姓名</td>
+                                                <td>总积分</td>
+                                                <td>排名</td>
+                                            </tr>
+                                            <tr>
+                                                <td>瞿海滨4</td>
+                                                <td>80.0</td>
+                                                <td><i class="con-result-rate">1</i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>瞿海滨4</td>
+                                                <td>80.0</td>
+                                                <td><i class="con-result-rate">2</i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>瞿海滨4</td>
+                                                <td>80.0</td>
+                                                <td><i class="con-result-rate">3</i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>瞿海滨4</td>
+                                                <td>80.0</td>
+                                                <td><i class="con-result-rate cur">4</i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>瞿海滨4</td>
+                                                <td>80.0</td>
+                                                <td><i class="con-result-rate cur">5</i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>瞿海滨4</td>
+                                                <td>80.0</td>
+                                                <td><i class="con-result-rate cur">6</i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>瞿海滨4</td>
+                                                <td>80.0</td>
+                                                <td><i class="con-result-rate cur">7</i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>瞿海滨4</td>
+                                                <td>80.0</td>
+                                                <td><i class="con-result-rate cur">8</i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>瞿海滨4</td>
+                                                <td>80.0</td>
+                                                <td><i class="con-result-rate cur">9</i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>瞿海滨4</td>
+                                                <td>80.0</td>
+                                                <td><i class="con-result-rate cur">10</i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <a href="javascript:;" class="load-more">查看全部排名>></a>
                                 </div>
                             </div>
                         </div>
