@@ -3,6 +3,7 @@
 <head>
     <title>Bootstrap</title>
     <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/top.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
@@ -28,6 +29,15 @@
                     <li class="g-nav-li"><a href="javascript:;"><em>运动员查询</em><span>ATHLETES</span></a></li>
                     <li class="g-nav-li"><a href="javascript:;"><em>关于我们</em><span>ABOUT US</span></a></li>
                     <li class="g-login"><a href="javascript:;"><em><i></i>登录</em><span>LOGIN</span></a></li>
+					<!--登录后-->
+                    <!--<li class="g-login-after dropdown">
+                        <a href="javascript:;" class="g-login-sub" data-toggle="dropdown"><em>用户名<i></i></em></a>
+                        <dl class="g-login-drop dropdown-menu clearfix" aria-labelledby="dLabel">
+                            <dd><a href="javascript:;"><em>俱乐部注册</em><span>BINDING</span></a></dd>
+                            <dd><a href="javascript:;"><em>修改密码</em><span>MODIFY THE PASSWORD</span></a></dd>
+                            <dd><a href="javascript:;"><em>退出</em><span>SIGN OUT</span></a></dd>
+                        </dl>
+                    </li>-->
                 </ul>
             </div>
         </nav>
@@ -89,63 +99,69 @@
                     </div>
                     <!-- 赛程-->
                     <div class="con-schedule">
-                        <div class="con-reg-title clearfix">
-                            <i class="con-reg-tip fl"></i>
-                            <span class="con-reg-text fl">赛程</span>
-                            <i class="con-reg-line fl">/</i>
-                            <span class="con-reg-sub fl">SCHEDULE</span>
+                        <div class="con-schedule1 open">
+                            <div class="con-reg-title clearfix" data-toggle="collapse" data-target="#con-right1" aria-expanded="true" aria-controls="con-right1">
+                                <i class="con-reg-tip fl"></i>
+                                <span class="con-reg-text fl">赛程</span>
+                                <i class="con-reg-line fl">/</i>
+                                <span class="con-reg-sub fl">SCHEDULE</span>
+                            </div>
+                            <div class="con-schedule-box collapse in" id="con-right1">
+                                <div class="con-light clearfix"><i></i><p>2016 全国攀岩分站赛（第四站）- 内蒙古.乌兰察布（B,S）比赛时间调整为7月2日-3日，在线报名已经开启。</p></div>
+                                <div class="con-rate">
+                                    <dl>
+                                        <dd>
+                                            <i class="con-rate-top"></i>
+                                            <i class="con-rate-circle"></i>
+                                            <span class="con-rate-time">2016-06-18</span>
+                                            <ul class="con-rate-list">
+                                                <li>
+                                                    <span>09:00</span><em>开幕式</em>
+                                                </li>
+                                                <li>
+                                                    <span>10:00</span><em>女子攀石预赛</em>
+                                                </li>
+                                                <li>
+                                                    <span>14:30</span><em>男子攀石预赛</em>
+                                                </li>
+                                                <li>
+                                                    <span>18:00</span><em>速度赛练习（暂不直播）</em>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                        <dd>
+                                            <i class="con-rate-top"></i>
+                                            <i class="con-rate-circle"></i>
+                                            <span class="con-rate-time">2016-06-18</span>
+                                            <ul class="con-rate-list">
+                                                <li>
+                                                    <span>09:00</span><em>开幕式</em>
+                                                </li>
+                                                <li>
+                                                    <span>10:00</span><em>女子攀石预赛</em>
+                                                </li>
+                                                <li>
+                                                    <span>14:30</span><em>男子攀石预赛</em>
+                                                </li>
+                                                <li>
+                                                    <span>18:00</span><em>速度赛练习（暂不直播）</em>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
                         </div>
-                        <div class="con-light clearfix"><i></i><p>2016 全国攀岩分站赛（第四站）- 内蒙古.乌兰察布（B,S）比赛时间调整为7月2日-3日，在线报名已经开启。</p></div>
-                        <div class="con-rate">
-                            <dl>
-                                <dd>
-                                    <i class="con-rate-top"></i>
-                                    <i class="con-rate-circle"></i>
-                                    <span class="con-rate-time">2016-06-18</span>
-                                    <ul class="con-rate-list">
-                                        <li>
-                                            <span>09:00</span><em>开幕式</em>
-                                        </li>
-                                        <li>
-                                            <span>10:00</span><em>女子攀石预赛</em>
-                                        </li>
-                                        <li>
-                                            <span>14:30</span><em>男子攀石预赛</em>
-                                        </li>
-                                        <li>
-                                            <span>18:00</span><em>速度赛练习（暂不直播）</em>
-                                        </li>
-                                    </ul>
-                                </dd>
-                                <dd>
-                                    <i class="con-rate-top"></i>
-                                    <i class="con-rate-circle"></i>
-                                    <span class="con-rate-time">2016-06-18</span>
-                                    <ul class="con-rate-list">
-                                        <li>
-                                            <span>09:00</span><em>开幕式</em>
-                                        </li>
-                                        <li>
-                                            <span>10:00</span><em>女子攀石预赛</em>
-                                        </li>
-                                        <li>
-                                            <span>14:30</span><em>男子攀石预赛</em>
-                                        </li>
-                                        <li>
-                                            <span>18:00</span><em>速度赛练习（暂不直播）</em>
-                                        </li>
-                                    </ul>
-                                </dd>
-                            </dl>
-                        </div>
-                        <div class="con-reg-title clearfix">
-                            <i class="con-reg-tip fl"></i>
-                            <span class="con-reg-text fl">赛况</span>
-                            <i class="con-reg-line fl">/</i>
-                            <span class="con-reg-sub fl">ACTION</span>
-                        </div>
-                        <div class="caikuang-box hidden-sm hidden-md hidden-lg">
-                            <p class="tips">暂无赛况</p>
+                        <div class="con-schedule2">
+                            <div class="con-reg-title clearfix " data-toggle="collapse" data-target="#con-right2" aria-expanded="true" aria-controls="con-right1">
+                                <i class="con-reg-tip fl"></i>
+                                <span class="con-reg-text fl">赛况</span>
+                                <i class="con-reg-line fl">/</i>
+                                <span class="con-reg-sub fl">ACTION</span>
+                            </div>
+                            <div class="caikuang-box hidden-sm hidden-md hidden-lg collapse in" id="con-right2">
+                                <p class="tips">暂无赛况</p>
+                            </div>
                         </div>
                     </div>
 
