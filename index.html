@@ -8,6 +8,7 @@
     <link href="css/index.css" rel="stylesheet">
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/lunbo.js"></script>
 </head>
 <body>
 
@@ -300,20 +301,41 @@
                            <div class="con-pic-l">
                                <div class="con-pic-blue"></div>
                                <div class="con-slide con-slide-l">
-                                   <div class="con-slide-pic con-slide-pic1 clearfix">
-                                       <ul>
-                                           <li><a href="javascript:;"><img src="img/pic2.jpg" alt=""><i></i></a></li>
-                                           <li><a href="javascript:;"><img src="img/pic2.jpg" alt=""><i></i></a></li>
-                                           <li><a href="javascript:;"><img src="img/pic2.jpg" alt=""><i></i></a></li>
-                                           <li><a href="javascript:;"><img src="img/pic2.jpg" alt=""><i></i></a></li>
-                                           <li><a href="javascript:;"><img src="img/pic2.jpg" alt=""><i></i></a></li>
-                                           <li><a href="javascript:;"><img src="img/pic2.jpg" alt=""><i></i></a></li>
-                                           <li><a href="javascript:;"><img src="img/pic2.jpg" alt=""><i></i></a></li>
-                                           <li><a href="javascript:;"><img src="img/pic2.jpg" alt=""><i></i></a></li>
-                                       </ul>
+                                   <div class="con-slide-pic con-slide-pic1 clearfix carousel slide" id="carousel_1">
+                                       <div class="carousel-inner">
+
+                                          <div class="item active">
+                                               <a href="javascript:;">
+                                                  <img src="img/pic2.jpg" alt="">
+                                              </a>
+                                               <a href="javascript:;">
+                                                  <img src="img/pic2.jpg" alt="">
+                                              </a>
+                                               <a href="javascript:;">
+                                                  <img src="img/pic2.jpg" alt="">
+                                              </a>
+                                               <a href="javascript:;">
+                                                  <img src="img/pic2.jpg" alt="">
+                                              </a>
+                                          </div>
+                                          <div class="item">
+                                              <a href="javascript:;">
+                                                  <img src="img/pic2.jpg" alt="">
+                                              </a>
+                                               <a href="javascript:;">
+                                                  <img src="img/pic2.jpg" alt="">
+                                              </a>
+                                               <a href="javascript:;">
+                                                  <img src="img/pic2.jpg" alt="">
+                                              </a>
+                                               <a href="javascript:;">
+                                                  <img src="img/pic2.jpg" alt="">
+                                              </a>
+                                          </div>
+                                     </div>
+                                       <a href="#carousel_1" class="con-slide-arrow left con-slide-arrow1 carousel-control" data-slide="prev"></a>
+                                       <a href="#carousel_1" class="con-slide-arrow right con-slide-arrow1 carousel-control" data-slide="next"></a>
                                    </div>
-                                   <a href="javascript:;" class="con-slide-arrow left con-slide-arrow1"></a>
-                                   <a href="javascript:;" class="con-slide-arrow right con-slide-arrow1"></a>
                                </div>
                            </div>
                            <div class="con-result">
@@ -335,188 +357,6 @@
                                    <a href="javascript:;" class="con-reg-more fr hidden-xs">MORE+</a>
                                </div>
                                <div class="con-result-list row">
-                                   <!--<ul class="clearfix">
-                                       <li>
-                                           <div class="con-result-title clearfix">
-                                               <span class="con-result-num con-result-num1"></span>
-                                               <em>难度赛</em>
-                                               <em>男子组</em>
-                                               <span class="con-result-arrow"></span>
-                                           </div>
-                                           <div class="con-result-table">
-                                               <div class="con-result-th clearfix">
-                                                   <span class="con-result-td1">排名</span>
-                                                   <span class="con-result-td2">姓名</span>
-                                                   <span class="con-result-td3">决赛成绩</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">1</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">2</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">3</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                           </div>
-                                       </li>
-                                       <li>
-                                           <div class="con-result-title clearfix">
-                                               <span class="con-result-num con-result-num2"></span>
-                                               <em>难度赛</em>
-                                               <em>男子组</em>
-                                               <span class="con-result-arrow"></span>
-                                           </div>
-                                           <div class="con-result-table">
-                                               <div class="con-result-th clearfix">
-                                                   <span class="con-result-td1">排名</span>
-                                                   <span class="con-result-td2">姓名</span>
-                                                   <span class="con-result-td3">决赛成绩</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">1</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">2</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">3</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                           </div>
-                                       </li>
-                                       <li>
-                                           <div class="con-result-title clearfix">
-                                               <span class="con-result-num con-result-num3"></span>
-                                               <em>难度赛</em>
-                                               <em>男子组</em>
-                                               <span class="con-result-arrow"></span>
-                                           </div>
-                                           <div class="con-result-table">
-                                               <div class="con-result-th clearfix">
-                                                   <span class="con-result-td1">排名</span>
-                                                   <span class="con-result-td2">姓名</span>
-                                                   <span class="con-result-td3">决赛成绩</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">1</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">2</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">3</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                           </div>
-                                       </li>
-                                       <li>
-                                           <div class="con-result-title clearfix">
-                                               <span class="con-result-num con-result-num4"></span>
-                                               <em>难度赛</em>
-                                               <em>男子组</em>
-                                               <span class="con-result-arrow"></span>
-                                           </div>
-                                           <div class="con-result-table">
-                                               <div class="con-result-th clearfix">
-                                                   <span class="con-result-td1">排名</span>
-                                                   <span class="con-result-td2">姓名</span>
-                                                   <span class="con-result-td3">决赛成绩</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">1</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">2</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">3</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                           </div>
-                                       </li>
-                                       <li>
-                                           <div class="con-result-title clearfix">
-                                               <span class="con-result-num con-result-num5"></span>
-                                               <em>难度赛</em>
-                                               <em>男子组</em>
-                                               <span class="con-result-arrow"></span>
-                                           </div>
-                                           <div class="con-result-table">
-                                               <div class="con-result-th clearfix">
-                                                   <span class="con-result-td1">排名</span>
-                                                   <span class="con-result-td2">姓名</span>
-                                                   <span class="con-result-td3">决赛成绩</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">1</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">2</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">3</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                           </div>
-                                       </li>
-                                       <li>
-                                           <div class="con-result-title clearfix">
-                                               <span class="con-result-num con-result-num6"></span>
-                                               <em>难度赛</em>
-                                               <em>男子组</em>
-                                               <span class="con-result-arrow"></span>
-                                           </div>
-                                           <div class="con-result-table">
-                                               <div class="con-result-th clearfix">
-                                                   <span class="con-result-td1">排名</span>
-                                                   <span class="con-result-td2">姓名</span>
-                                                   <span class="con-result-td3">决赛成绩</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">1</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">2</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                               <div class="con-result-row clearfix">
-                                                   <span class="con-result-td1"><i class="con-result-rate">3</i></span>
-                                                   <a href="javascript:;" class="con-result-td2 con-result-name">瞿海滨</a>
-                                                   <span class="con-result-td3 con-result-grade">48 +</span>
-                                               </div>
-                                           </div>
-                                       </li>
-                                   </ul>-->
                                    <div class="col-sm-6">
                                        <div class="con-result-title clearfix">
                                            <span class="con-result-num con-result-num1"></span>
@@ -730,18 +570,34 @@
                     <div class="ranking-box">
                         <div class="con-action-dels">
                             <div class="con-slide con-slide-m con-slide-m1">
-                                <div class="con-slide-pic con-slide-pic2">
-                                    <ul class="clearfix">
-                                        <li><a href="javascript:;"><img src="img/pic3.jpg" alt=""><i></i></a></li>
-                                        <li><a href="javascript:;"><img src="img/pic3.jpg" alt=""><i></i></a></li>
-                                        <li><a href="javascript:;"><img src="img/pic3.jpg" alt=""><i></i></a></li>
-                                        <li><a href="javascript:;"><img src="img/pic3.jpg" alt=""><i></i></a></li>
-                                        <li><a href="javascript:;"><img src="img/pic3.jpg" alt=""><i></i></a></li>
-                                        <li><a href="javascript:;"><img src="img/pic3.jpg" alt=""><i></i></a></li>
-                                    </ul>
+                                <div class="con-slide-pic con-slide-pic2 carousel slide" id="carousel_2">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                           <a href="javascript:;">
+                                              <img src="img/pic3.jpg" alt="">
+                                          </a>
+                                           <a href="javascript:;">
+                                              <img src="img/pic3.jpg" alt="">
+                                          </a>
+                                           <a href="javascript:;">
+                                              <img src="img/pic3.jpg" alt="">
+                                          </a>
+                                        </div>
+                                        <div class="item">
+                                           <a href="javascript:;">
+                                              <img src="img/pic3.jpg" alt="">
+                                          </a>
+                                           <a href="javascript:;">
+                                              <img src="img/pic3.jpg" alt="">
+                                          </a>
+                                           <a href="javascript:;">
+                                              <img src="img/pic3.jpg" alt="">
+                                          </a>
+                                        </div>
+                                    </div>
+                                    <a href="#carousel_2" class="con-slide-arrow con-slide-arrow2 left carousel-control" data-slide="prev"></a>
+                                    <a href="#carousel_2" class="con-slide-arrow con-slide-arrow2 right carousel-control" data-slide="next"></a>
                                 </div>
-                                <a href="javascript:;" class="con-slide-arrow con-slide-arrow2 left"></a>
-                                <a href="javascript:;" class="con-slide-arrow con-slide-arrow2 right"></a>
                             </div>
                             <div class="con-action-top">
                                 <div class="con-top-title clearfix">
@@ -828,18 +684,34 @@
                                 </div>
                             </div>
                             <div class="con-slide con-slide-m con-slide-m2">
-                                <div class="con-slide-pic con-slide-pic3">
-                                    <ul class="clearfix">
-                                        <li><a href="javascript:;"><img src="img/pic3.jpg" alt=""><i></i></a></li>
-                                        <li><a href="javascript:;"><img src="img/pic3.jpg" alt=""><i></i></a></li>
-                                        <li><a href="javascript:;"><img src="img/pic3.jpg" alt=""><i></i></a></li>
-                                        <li><a href="javascript:;"><img src="img/pic3.jpg" alt=""><i></i></a></li>
-                                        <li><a href="javascript:;"><img src="img/pic3.jpg" alt=""><i></i></a></li>
-                                        <li><a href="javascript:;"><img src="img/pic3.jpg" alt=""><i></i></a></li>
-                                    </ul>
+                                <div class="con-slide-pic con-slide-pic2 carousel slide" id="carousel_3">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                           <a href="javascript:;">
+                                              <img src="img/pic3.jpg" alt="">
+                                          </a>
+                                           <a href="javascript:;">
+                                              <img src="img/pic3.jpg" alt="">
+                                          </a>
+                                           <a href="javascript:;">
+                                              <img src="img/pic3.jpg" alt="">
+                                          </a>
+                                        </div>
+                                        <div class="item">
+                                           <a href="javascript:;">
+                                              <img src="img/pic3.jpg" alt="">
+                                          </a>
+                                           <a href="javascript:;">
+                                              <img src="img/pic3.jpg" alt="">
+                                          </a>
+                                           <a href="javascript:;">
+                                              <img src="img/pic3.jpg" alt="">
+                                          </a>
+                                        </div>
+                                    </div>
+                                    <a href="#carousel_3" class="con-slide-arrow con-slide-arrow2 left carousel-control" data-slide="prev"></a>
+                                    <a href="#carousel_3" class="con-slide-arrow con-slide-arrow2 right carousel-control" data-slide="next"></a>
                                 </div>
-                                <a href="javascript:;" class="con-slide-arrow con-slide-arrow3 left"></a>
-                                <a href="javascript:;" class="con-slide-arrow con-slide-arrow3 right"></a>
                             </div>
                             <div class="con-action-top">
                                 <div class="con-top-title clearfix">
