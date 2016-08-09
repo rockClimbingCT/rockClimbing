@@ -1,29 +1,4 @@
 
-/*reset start*/
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,button{margin:0;padding:0}
-body{font:12px/1.5 \5B8B\4F53;}
-table{border-collapse:collapse;border-spacing:0}
-button,input,textarea,fieldset{padding:0;*overflow:visible}
-input,textarea{outline:0;resize:none}
-fieldset,img{border:0}
-address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
-ol,ul,li{list-style:none}
-caption,th{text-align:left}
-h1,h2,h3,h4,h5,h6{font-size:100%}
-q:beforce,q:after{content:''}
-abbr,acronym{border:0}
-label{cursor:pointer}
-legend{margin-left:0}
-.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
-.clearfix{*zoom:1}
-.fl{float:left;display:inline}
-.fr{float:right;display:inline}
-.none{display:none}
-.pr{position:relative}
-.pa{position:absolute}
-i{font-style:normal;}
-a:hover{text-decoration: none;}
-
 
 /*banner*/
 .banner-wrap{height: 280px;background: #f1f1f1;}
@@ -249,9 +224,7 @@ a:hover{text-decoration: none;}
 .con-action-table .con-result-row a.con-result-all:hover{color:#3b64c4;text-decoration: underline;}
 .con-slide-m2{margin-top:30px;}
 
-.footer{height:80px;width:100%;background: #1c1c1c;width:100%;line-height:80px;}
-.footer p{text-align:center;color:#999999;}
-.footer p span{padding:0 10px;}
+
 
 
 .paiming-table{width: 100%; text-align: center; border: 1px solid #d7dbe4; font-size: 12px; color: #41485b;}
