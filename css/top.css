@@ -109,11 +109,12 @@
 .club-t-head-txt{color:#3b64c4;font-size:16px;}
 .club-t-head i{width:12px;height:12px;background: url("../img/circle.png") no-repeat;padding-right:10px;}
 .club-t-items{padding:25px 0 0 30px;}
-.club-t-items-list{height:38px;line-height:38px;padding-top:20px;font-size:12px;color:#666;}
+.club-t-items-list{height:38px;line-height:38px;padding-top:20px;font-size:12px;color:#666;position:relative;}
 .club-t-items-txt{width:70px;}
 .club-t-items-input{width:258px;height:36px;line-height:36px;padding:0 10px;border:1px solid #e1e1e1;}
 .club-t-tip{color:#ff9333;line-height:32px;padding:10px 0;}
 .club-t-submit{display:block;width:100px;height:34px;line-height:34px;border:0 none;margin:10px auto 0;background:#3b64c4;border-radius:20px;font-size:14px;color:#fff;text-align: center;}
+.club-error{color:#f30;height:20px;line-height:20px;position:absolute;top:58px;left:72px;display:none;}
 /* 俱乐部冠名 end */
 /*运动员管理\联赛报名管理start*/
 .club-m-r{background: #fff;}
@@ -160,7 +161,7 @@
 .club-a-select .club-a-selected{display:block;position:relative;text-indent:10px; height:36px; line-height:36px; border:1px solid #e1e1e1;background:#fff; }
 .club-a-select em {  float:left;  }
 .club-a-select i { position:absolute;  width:10px;  height:6px;  top:50%;  right:10px;  margin-top:-3px;  overflow:hidden;  background:url(../img/arrow-j.png) no-repeat;  }
-.club-a-select .club-a-select-item {  position:absolute;  top:37px;  left:0;  width:100%;  background:#fff;  display:none;}
+.club-a-select .club-a-select-item {  position:absolute;  top:37px;  left:0;  width:100%;  background:#fff;  display:none;z-index:10;}
 .club-a-select .club-a-select-list {  border:1px solid #e1e1e1;  max-height:180px;  height:auto;  _height:180px;  overflow:auto;  }
 .club-a-select li {  height:36px;  line-height:36px;  text-indent:10px;  vertical-align:middle;  font-size:12px;  overflow:hidden;  }
 .club-a-select a,.club-a-select a:visited{  display:block;  color:#666;  }
@@ -171,6 +172,7 @@
 .club-items-list-upload{height:auto;}
 .club-a-upload-dels{margin-left:20px;}
 .club-a-upload-add{display:block;width:86px;height:26px;line-height:26px;text-align:center;font-size:12px;color:#3b64c4;border:1px solid #3b64c4;border-radius:20px;}
+.club-a-r .club-error{left:84px;}
 /*添加运动员end*/
 /*关于我们start*/
 .indexMain-wrap.about,.indexMain-wrap.back{padding:40px 0;}

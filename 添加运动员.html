@@ -61,12 +61,13 @@
                         <span class="club-t-wave"></span>
                     </div>
                     <div class="club-t-items">
-                        <form action="">
+                        <form action="" class="club-a-form">
                             <div class="club-t-items-list clearfix">
                                 <span class="club-t-items-txt fl"><i>*</i>姓名</span>
                                 <div class="club-t-items-para fl">
-                                    <input type="text" class="club-t-items-input" name="" value=""/>
+                                    <input type="text" class="club-t-items-input club-a-name" name="" value=""/>
                                 </div>
+                                <span class="club-error"></span>
                             </div>
                             <div class="club-t-items-list club-items-list-sex j-sex clearfix">
                                 <span class="club-t-items-txt fl"><i>*</i>性别</span>
@@ -74,18 +75,21 @@
                                     <div class="club-a-sex fl"><span class="check checked" ></span><label>男</label></div>
                                     <div class="club-a-sex fl"><span class="check" ></span><label>女</label></div>
                                 </div>
+                                <input type="hidden" name="" class="club-hidden-sex" value="男"/>
+                                <span class="club-error"></span>
                             </div>
                             <div class="club-t-items-list clearfix">
                                 <span class="club-t-items-txt fl"><i>*</i>证件号码</span>
                                 <div class="club-t-items-para fl">
-                                    <input type="text" class="club-t-items-input" name="" value=""/>
+                                    <input type="text" class="club-t-items-input club-a-auth" name="" value=""/>
                                 </div>
+                                <span class="club-error"></span>
                             </div>
                             <div class="club-t-items-list clearfix">
                                 <span class="club-t-items-txt fl"><i>*</i>身份类型</span>
                                 <div class="club-t-items-para fl">
                                     <div class="club-a-select">
-                                        <span class="club-a-selected"><em>中国大陆</em><i></i></span>
+                                        <span class="club-a-selected"><em>请选择</em><i></i></span>
                                         <div class="club-a-select-item" >
                                             <ul class="club-a-select-list">
                                                 <li><a href="javascript:;">中国大陆</a></li>
@@ -94,30 +98,36 @@
                                         </div>
                                     </div>
                                 </div>
+                                <input type="hidden" name="" class="club-hidden-type" value=""/>
+                                <span class="club-error"></span>
                             </div>
                             <div class="club-t-items-list clearfix">
                                 <span class="club-t-items-txt fl"><i>*</i>邮箱</span>
                                 <div class="club-t-items-para fl">
-                                    <input type="text" class="club-t-items-input" name="" value=""/>
+                                    <input type="text" class="club-t-items-input club-a-mail" name="" value=""/>
                                 </div>
+                                <span class="club-error"></span>
                             </div>
                             <div class="club-t-items-list clearfix">
                                 <span class="club-t-items-txt fl"><i></i>联系电话1</span>
                                 <div class="club-t-items-para fl">
                                     <input type="text" class="club-t-items-input" name="" value=""/>
                                 </div>
+                                <span class="club-error"></span>
                             </div>
                             <div class="club-t-items-list clearfix">
                                 <span class="club-t-items-txt fl"><i></i>联系电话2</span>
                                 <div class="club-t-items-para fl">
                                     <input type="text" class="club-t-items-input" name="" value=""/>
                                 </div>
+                                <span class="club-error"></span>
                             </div>
                             <div class="club-t-items-list clearfix">
                                 <span class="club-t-items-txt fl"><i></i>通讯地址</span>
                                 <div class="club-t-items-para fl">
                                     <input type="text" class="club-t-items-input" name="" value=""/>
                                 </div>
+                                <span class="club-error"></span>
                             </div>
                             <div class="club-t-items-list club-items-list-upload clearfix">
                                 <span class="club-t-items-txt fl"><i></i>运动员照片</span>
@@ -131,6 +141,7 @@
                                         <p class="club-a-upload-tip">运动员近期证件照*.gif*.jpg*.png≤1MB</p>
                                     </div>
                                 </div>
+                                <span class="club-error"></span>
                             </div>
                             <input type="submit" class="club-t-submit" value="添加"/>
                         </form>
