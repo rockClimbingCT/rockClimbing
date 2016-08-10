@@ -1,4 +1,3 @@
-
 /*header start*/
 .g-header,.g-header .navbar-header{height:76px;}
 .g-header{background: #f6f6f6;width:100%;z-index:10;position: relative;}
@@ -11,6 +10,7 @@
 .g-fun{width:36px;height:32px;background: url("../img/fun.png") no-repeat;background-size:cover;margin-top:22px;padding:0;}
 .g-header .navbar-nav li,.g-header .navbar-nav li a{float:left;height:76px;}
 .g-header .navbar-nav li{border-right:1px solid #eaeaea;text-align:center;}
+.g-header .navbar-nav li.g-nav-first{border-left:1px solid #eaeaea;}
 .g-header .navbar-nav li a{padding:0 30px;background: #f6f6f6;}
 .g-header .navbar-nav li em,.g-header .navbar-nav li span{display:block;}
 .g-header .navbar-nav li em{font-size:14px;color:#333;line-height:22px;padding-top:23px;}
@@ -34,8 +34,9 @@
 .g-header .g-login-after.open a, .g-header .g-login-after.open a:focus, .g-header .g-login-after.open a:hover{background:#3b64c4;}
 .g-header .g-login-after.open a.g-login-sub em{color:#c1cff2;}
 .g-header .g-login-after.open a.g-login-sub em i{background: url("../img/arrow-f.png") no-repeat;}
-@media (min-width: 1068px) and (max-width: 1200px) {.g-header .navbar-nav li a{padding:0 20px;} }
-@media (min-width: 768px) and (max-width: 992px){.g-logo,.g-logo img{width:150px;height:60px;}.g-logo{margin-top:8px;}}
+.g-nav-blank{width:500px;}
+@media (min-width: 1068px) and (max-width: 1200px) {.g-header .navbar-nav li a{padding:0 20px;}}
+@media (min-width: 768px) and (max-width: 992px){.g-logo,.g-logo img{width:150px;height:60px;}.g-logo{margin-top:8px;} .g-nav-blank{width:300px;}}
 @media (min-width: 768px) and (max-width: 1068px) {.g-header .navbar-nav li a{padding:0 9px;} }
 @media (min-width: 1068px) and (max-width: 1168px) { .g-header .navbar-nav li a{padding:0 15px;}}
 @media (max-width: 768px){
@@ -82,3 +83,123 @@
 .g-ban-arrow.left{left:20px;background: url("../img/arrow-left2.png") no-repeat;}
 .g-ban-arrow.right{right:20px;background: url("../img/arrow-right2.png") no-repeat;}
 /*banner slide end*/
+
+/* 俱乐部冠名 start */
+.club-t-con{margin-top:40px;}
+.club-t-l{width:230px;background: #41485b;min-height:714px;}
+.club-t-r{width:970px;background: url("../img/club-bg.jpg") no-repeat;min-height:714px;position: relative;background-size:cover;}
+.club-t-list{position:relative;}
+.club-t-list dt{height:80px;position:relative;}
+.club-t-title{width:251px;height:117px;background: url("../img/club-shape.png") no-repeat;position:absolute;bottom:-23px;right:0;text-align: center;}
+.club-t-title i{display:inline-block;width:142px;height:40px;background: url("../img/club-school.png") no-repeat;vertical-align: top;margin-top:34px;}
+.club-t-list dd{height:60px;line-height:60px;font-size:14px;border-bottom:1px solid #41485b;}
+.club-t-list dd a{display:block;height:60px;color:#b2b5bc;padding-left:20px;background: #4c576a;}
+.club-t-list dd .club-t-icon,.club-t-list dd em{display:inline-block;vertical-align: middle;}
+.club-t-list dd .club-t-icon{width:18px;height:16px;overflow: hidden;padding-right:15px;}
+.club-t-list dd.club-t-list1 .club-t-icon{background: url("../img/club-icon1.png") no-repeat;}
+.club-t-list dd.club-t-list2 .club-t-icon{background: url("../img/club-icon2.png") no-repeat;}
+.club-t-list dd.club-t-list3 .club-t-icon{background: url("../img/club-icon3.png") no-repeat;}
+.club-t-list dd.club-t-list4 .club-t-icon{background: url("../img/club-icon4.png") no-repeat;}
+.club-t-list dd.active a{background:#3b64c4;color:#fff;}
+.club-t-dels{width:433px;height:344px;border:1px solid rgba(0,0,0,0.2);background: #fcfcfc;position:absolute;top:50%;left:50%;margin-top:-172px;margin-left:-216px;}
+.club-t-head{height:56px;line-height:56px;padding-left:30px;position:relative;}
+.club-t-wave{height:22px;position:absolute;bottom:-7px;left:0;width:433px;background: url("../img/club-wave.png") no-repeat;}
+.club-t-bg{height:17px;width:100%;position:absolute;bottom:-18px;left:0;background: url("../img/club-s.png") no-repeat;}
+.club-t-head-txt,.club-t-head i{display: inline-block;vertical-align: middle;}
+.club-t-head-txt{color:#3b64c4;font-size:16px;}
+.club-t-head i{width:12px;height:12px;background: url("../img/circle.png") no-repeat;padding-right:10px;}
+.club-t-items{padding:25px 0 0 30px;}
+.club-t-items-list{height:38px;line-height:38px;padding-top:20px;font-size:12px;color:#666;}
+.club-t-items-txt{width:70px;}
+.club-t-items-input{width:258px;height:36px;line-height:36px;padding:0 10px;border:1px solid #e1e1e1;}
+.club-t-tip{color:#ff9333;line-height:32px;padding:10px 0;}
+.club-t-submit{display:block;width:100px;height:34px;line-height:34px;border:0 none;margin:10px auto 0;background:#3b64c4;border-radius:20px;font-size:14px;color:#fff;text-align: center;}
+/* 俱乐部冠名 end */
+/*运动员管理\联赛报名管理start*/
+.club-m-r{background: #fff;}
+.club-m-con{padding:15px 20px 20px;}
+.club-m-reg{padding:0 15px 0 40px;height:26px;line-height:26px;font-size:14px;color:#2b55bb;border-radius:20px;border:1px solid #83a1e9;background: url("../img/club-m-icon.png") no-repeat 18px 5px;}
+.club-m-table{width:928px;border:1px solid #d6dae3;margin-top:10px;font-size:12px;color:#333;}
+.club-m-table td,.club-m-table th{border:1px solid #d6dae3;line-height:20px;padding:15px 0;text-align: center;}
+.club-m-table th{border:1px solid #3b64c4;padding:17px 0;background: #3b64c4;color:#fff;font-size:14px;}
+.club-m-table td a{color:#333;}
+.club-m-table td a:hover{color:#3b64c4;}
+.club-m-table td.gray,.club-m-table td.gray a{color:#666;font-size:14px;}
+.club-m-table td.gray a:hover{color:#3b64c4;}
+.club-m-table tbody tr:nth-of-type(2n){background:#f9f8ec;}
+.club-m-go,.club-m-look,.club-m-cancel{display:inline-block;padding:0 10px 0 22px;vertical-align: top;}
+.club-m-go{background: url("../img/club-m-icon1.png") no-repeat 0 4px;padding-left:18px;}
+.club-m-look{background: url("../img/club-m-icon2.png") no-repeat 0 5px;}
+.club-m-cancel{background: url("../img/club-m-icon3.png") no-repeat 0 4px;padding-left:18px;}
+
+.club-m-page{text-align: center;padding-top:20px;}
+.club-m-page a ,.club-m-page .club-m-page-now{position:relative;  display:inline-block;  margin:0 3px; width:30px;height:30px;line-height:30px;  vertical-align:middle;   font-size:12px;text-align:center;border-radius:30px;}
+.club-m-page a {border:1px solid #eaeaea;  color:#333;  background:#fff;  }
+.club-m-page .club-m-page-now,.club-m-page a:hover{border:1px solid #fff045; background:#fff045; }
+/*运动员管理\联赛报名管理end*/
+/*俱乐部资料 start*/
+.club-d-dels{width:397px;height:666px;border:1px solid rgba(0,0,0,0.2);background: #fcfcfc;margin:40px auto 46px;position: relative;}
+.club-d-dels .club-t-wave{width:397px;background: url("../img/club-wave.png") no-repeat;}
+.club-d-dels .club-t-items-txt i{position:absolute;color:#ff9333;font-size:14px;left:0;top:0;line-height:20px;top:12px;}
+.club-d-dels .club-t-items-txt{width:48px;padding-left:10px;position:relative;}
+.club-d-con .club-t-l{padding-bottom:40px;}
+.club-d-con .club-t-submit{margin-top:20px;}
+.club-d-con .club-t-items{padding-top:5px;}
+/*俱乐部资料 end*/
+/*添加运动员start*/
+.club-a-sex{margin-right:40px;}
+.club-a-sex .check,.club-a-sex .checked{display:inline-block;width:18px; height:18px; cursor:pointer;  vertical-align:middle;  overflow:hidden;  background:url(../img/club-check.png) no-repeat;margin-right:10px;}
+.club-a-sex .checked{background:url(../img/club-checked.png) no-repeat;}
+.club-a-sex label{font-weight: normal;vertical-align: top;}
+.club-items-list-sex{height:18px;line-height:18px;}
+.club-items-list-sex .club-t-items-txt i{top:2px;}
+.club-a-r .club-t-items-txt{width:72px;}
+.club-a-r .club-d-dels{width:442px;}
+.club-a-r .club-t-wave{width:442px;background: url("../img/club-wave.png") no-repeat;background-size:cover;}
+.club-a-select {position:relative;width:280px;}
+.club-a-select .club-a-selected{display:block;position:relative;text-indent:10px; height:36px; line-height:36px; border:1px solid #e1e1e1;background:#fff; }
+.club-a-select em {  float:left;  }
+.club-a-select i { position:absolute;  width:10px;  height:6px;  top:50%;  right:10px;  margin-top:-3px;  overflow:hidden;  background:url(../img/arrow-j.png) no-repeat;  }
+.club-a-select .club-a-select-item {  position:absolute;  top:37px;  left:0;  width:100%;  background:#fff;  display:none;}
+.club-a-select .club-a-select-list {  border:1px solid #e1e1e1;  max-height:180px;  height:auto;  _height:180px;  overflow:auto;  }
+.club-a-select li {  height:36px;  line-height:36px;  text-indent:10px;  vertical-align:middle;  font-size:12px;  overflow:hidden;  }
+.club-a-select a,.club-a-select a:visited{  display:block;  color:#666;  }
+.club-a-select a:hover { background:#eceef1;  }
+.club-a-upload,.club-a-upload img,.club-a-upload-file{display:block;width:68px;height:68px;}
+.club-a-upload{position:relative;overflow:hidden;}
+.club-a-upload-file{position:absolute;top:0;left:0;opacity:0;filter:alpha(opacity=0);}
+.club-items-list-upload{height:auto;}
+.club-a-upload-dels{margin-left:20px;}
+.club-a-upload-add{display:block;width:86px;height:26px;line-height:26px;text-align:center;font-size:12px;color:#3b64c4;border:1px solid #3b64c4;border-radius:20px;}
+/*添加运动员end*/
+/*关于我们start*/
+.indexMain-wrap.about,.indexMain-wrap.back{padding:40px 0;}
+.indexMain-wrap.about .container{min-height:640px;}
+.indexMain-wrap.about .con-calendar,.indexMain-wrap.back .con-calendar{padding-top:0;}
+.indexMain-wrap.about .con-reg-title,.indexMain-wrap.back .con-reg-title{height:60px;line-height:60px;padding-left:20px;}
+.indexMain-wrap.about .con-reg-tip,.indexMain-wrap.back .con-reg-tip{margin-top:21px;}
+.indexMain-wrap.about .con-reg-line,.indexMain-wrap.back .con-reg-line{padding-top:16px;}
+.indexMain-wrap.about .con-reg-sub,.indexMain-wrap.back .con-reg-sub{padding-top:18px;}
+.about-para{padding:35px 40px 0;}
+.about-text p{line-height:28px;font-size:16px;color:#666;padding-top:28px;text-indent:2em;}
+.about-note{padding-top:56px;}
+.about-note p{line-height:28px;font-size:16px;color:#666;text-align:right;}
+.about-note p.about-date{line-height:30px;font-size:12px;color:#999;}
+.about-para .col-sm-6{padding:0;}
+.about-pic{margin:10px 0 0 30px;}
+.about-pic img{width:100%;height:auto;}
+/*关于我们end*/
+/*赛事回顾start*/
+.indexMain-wrap.back .con-reg-text{font-size:16px;}
+.indexMain-wrap.back .col-xs-6,.indexMain-wrap.back .col-md-3,.indexMain-wrap.back .col-sm-6{padding:0;}
+@media (min-width: 992px) and (max-width: 1200px) { .indexMain-wrap.back .back-dels li{width:315px;}}
+.back-dels{padding:0 20px 20px 0;}
+.back-dels li a{display:block;position:relative;margin:20px 0 0 20px;}
+.back-pic{width:100%;height:auto;display: block;}
+.back-title{height:42px;line-height:42px;background: #41485b;padding:0 10px;}
+.back-title span{display:block;overflow:hidden;width:100%;white-space:nowrap;text-overflow:ellipsis;font-size:12px;color:#f6f6f6;}
+.back-date{height:16px;line-height:16px;padding:0 6px;position:absolute;left:5px;bottom:52px;background: rgba(0,0,0,0.8);border-radius:2px;color:#fff;}
+.back-arrow{width:20px;height:10px;background: url("../img/back-arrow.png") no-repeat;position:absolute;bottom:42px;right:5px;}
+.back-yellow{width:100%;height:4px;background: #fff045;position:absolute;bottom:0;left:0;display:none;}
+.back-dels li.active .back-yellow{display:block;}
+/*赛事回顾end*/
