@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,14 +34,14 @@
 
 <div class="wrap">
     <div id="myCarousel" class="carousel slide">
-       <!-- 轮播（Carousel）指标 -->
+       &lt;!&ndash; 轮播（Carousel）指标 &ndash;&gt;
        <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0"
              class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
        </ol>  
-       <!-- 轮播（Carousel）项目 -->
+       &lt;!&ndash; 轮播（Carousel）项目 &ndash;&gt;
        <div class="carousel-inner">
 
             <div class="item active">
@@ -68,12 +69,12 @@
        </div>
 
         
-       <!-- 轮播（Carousel）导航 -->
+       &lt;!&ndash; 轮播（Carousel）导航 &ndash;&gt;
        <a class="carousel-control left" href="#myCarousel"
           data-slide="prev">&lsaquo;</a>
        <a class="carousel-control right" href="#myCarousel"
           data-slide="next">&rsaquo;</a>
-       <!-- 控制按钮 -->
+       &lt;!&ndash; 控制按钮 &ndash;&gt;
        <div style="text-align:center;position: absolute;left: 600px;top: 0px;">
           <input type="button" class="btn start-slide" value="Start">
           <input type="button" class="btn pause-slide" value="Pause">
@@ -85,6 +86,11 @@
        </div>
     </div>
 </div>
+
+
+
+
+
 <script>
    $(function(){
       // 初始化轮播
@@ -117,5 +123,46 @@
 </script>
  
  
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 实例 - 缩略图</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="img/video.jpg"
+                 alt="通用的占位符缩略图">
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="img/video.jpg"
+                 alt="通用的占位符缩略图">
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="img/video.jpg"
+                 alt="通用的占位符缩略图">
+        </a>
+    </div>
+    <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img src="img/video.jpg"
+                 alt="通用的占位符缩略图">
+        </a>
+    </div>
+</div>
+
 </body>
 </html>
