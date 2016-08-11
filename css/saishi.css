@@ -306,3 +306,8 @@
 .zhibo-main-wrap .con-rate{margin-bottom: 0px;}
 .ewm-wrap{background-color: #d8e0f3;padding: 27px 10px 29px 18px;}
 .ewm-wrap .thumbnail{background-color: transparent;margin-bottom: 0px;padding: 0px;}
+
+
+@media (max-width: 1200px) {
+    .zhibo-main-left{padding-right: 20px;}
+}
