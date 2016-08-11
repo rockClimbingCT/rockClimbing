@@ -175,13 +175,13 @@
 .club-a-r .club-error{left:84px;}
 /*添加运动员end*/
 /*关于我们start*/
-.indexMain-wrap.about,.indexMain-wrap.back{padding:40px 0;}
+.indexMain-wrap.about,.indexMain-wrap.back,.indexMain-wrap.reg-c,.indexMain-wrap.reg-b{padding:40px 0;}
 .indexMain-wrap.about .container{min-height:640px;}
-.indexMain-wrap.about .con-calendar,.indexMain-wrap.back .con-calendar{padding-top:0;}
-.indexMain-wrap.about .con-reg-title,.indexMain-wrap.back .con-reg-title{height:60px;line-height:60px;padding-left:20px;}
-.indexMain-wrap.about .con-reg-tip,.indexMain-wrap.back .con-reg-tip{margin-top:21px;}
-.indexMain-wrap.about .con-reg-line,.indexMain-wrap.back .con-reg-line{padding-top:16px;}
-.indexMain-wrap.about .con-reg-sub,.indexMain-wrap.back .con-reg-sub{padding-top:18px;}
+.indexMain-wrap.about .con-calendar,.indexMain-wrap.back .con-calendar,.indexMain-wrap.reg-c .con-calendar,.indexMain-wrap.reg-b .con-calendar{padding-top:0;}
+.indexMain-wrap.about .con-reg-title,.indexMain-wrap.back .con-reg-title,.indexMain-wrap.reg-c .con-reg-title,.indexMain-wrap.reg-b .con-reg-title{height:60px;line-height:60px;padding-left:20px;}
+.indexMain-wrap.about .con-reg-tip,.indexMain-wrap.back .con-reg-tip,.indexMain-wrap.reg-c .con-reg-tip,.indexMain-wrap.reg-b .con-reg-tip{margin-top:21px;}
+.indexMain-wrap.about .con-reg-line,.indexMain-wrap.back .con-reg-line,.indexMain-wrap.reg-c .con-reg-line,.indexMain-wrap.reg-b .con-reg-line{padding-top:16px;}
+.indexMain-wrap.about .con-reg-sub,.indexMain-wrap.back .con-reg-sub,.indexMain-wrap.reg-c .con-reg-sub,.indexMain-wrap.reg-b .con-reg-sub{padding-top:18px;}
 .about-para{padding:35px 40px 0;}
 .about-text p{line-height:28px;font-size:16px;color:#666;padding-top:28px;text-indent:2em;}
 .about-note{padding-top:56px;}
@@ -205,3 +205,33 @@
 .back-yellow{width:100%;height:4px;background: #fff045;position:absolute;bottom:0;left:0;display:none;}
 .back-dels li.active .back-yellow{display:block;}
 /*赛事回顾end*/
+/*取消报名start*/
+.indexMain-wrap.reg-c .con-select-top,.indexMain-wrap.reg-b .con-select-top{margin-top:15px;}
+.indexMain-wrap.reg-c .club-t-r,.indexMain-wrap.reg-b .club-t-r{width:100%;min-height:455px;background: url("../img/club-bg2.jpg") no-repeat;background-size:cover;}
+.indexMain-wrap.reg-c .club-t-items-txt i,.indexMain-wrap.reg-b .club-t-items-txt i{position:absolute;color:#ff9333;font-size:14px;left:0;top:0;line-height:20px;top:12px;}
+.indexMain-wrap.reg-c .club-t-items-txt,.indexMain-wrap.reg-b .club-t-items-txt{padding-left:10px;position:relative;}
+.indexMain-wrap.reg-c .club-t-submit{margin-top:30px;}
+.indexMain-wrap.reg-c .club-error{left:82px;}
+/*取消报名end*/
+/*参赛报名start*/
+.indexMain-wrap.reg-b .club-t-dels{width:509px;height:973px;position:absolute;top:40px;margin-left:-254px;margin-top:0;}
+.indexMain-wrap.reg-b .club-t-r{height:1064px;background: url("../img/club-bg3.jpg") no-repeat;background-size:cover;}
+.indexMain-wrap.reg-b .club-t-items{padding-top:5px;}
+.indexMain-wrap.reg-b .club-items-list-sex .club-t-items-txt i{top:2px;}
+.club-b-sec1{padding-bottom:20px;border-bottom:1px solid #c8c8c8;}
+.indexMain-wrap.reg-b .club-t-wave{width:509px;background-size:cover;}
+.club-b-box{width:105px;}
+.club-b-box .check,.club-b-box .checked{display:inline-block;width:18px; height:18px; cursor:pointer;  vertical-align:middle;  overflow:hidden;  background:url(../img/club-box-check.png) no-repeat;margin-right:10px;}
+.club-b-box .checked{background:url(../img/club-box-checked.png) no-repeat;}
+.club-b-box label{font-weight: normal;vertical-align: top;}
+.club-b-textarea{width:370px;height:86px;border:1px solid #e1e1e1;position:relative;}
+.club-b-textarea textarea{padding:5px;width:360px;height:76px;border:0 none;line-height:20px;color:#666;}
+.club-b-static{line-height:20px;color:#999;position:absolute;bottom:5px;right:5px;}
+.club-b-static em{color:#3b64c4;}
+.indexMain-wrap.reg-b .club-items-list-other{height:88px;}
+.indexMain-wrap.reg-b .club-t-submit{margin-top:20px;}
+.indexMain-wrap.reg-b .club-error{left:82px;}
+.j-b-items .club-error,.j-b-id .club-error{top:38px;}
+.club-items-list-other .club-error{top:108px;}
+.indexMain-wrap.reg-a .club-t-con,.indexMain-wrap.reg-m .club-t-con,.indexMain-wrap.reg-g .club-t-con,.indexMain-wrap.reg-d .club-t-con{min-width:1200px;}
+/*参赛报名end*/

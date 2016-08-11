@@ -1,28 +1,32 @@
 (function(){
     //模拟单选
-    var checkOnes = $('.j-sex').find('.check');
-    checkOnes.on('click', function(){
-        checkOnes.removeClass('checked')
-        $(this).addClass('checked');
-    });
-
-    //模拟select下拉
-    var selects = $('.club-a-select'),
-        curPanel = selects.find('.club-a-selected'),
-        sItem = selects.find('.club-a-select-item');
-
-    curPanel.click(function(){
-        var em = $(this).find('em');
-        sItem.show().find('li').click(function(){
-            em.html($(this).text());
-            sItem.hide();
+    $('.j-sex,.j-b-sex,.j-b-type').each(function(){
+        var checkOnes = $(this).find('.check');
+        checkOnes.on('click', function(){
+            checkOnes.removeClass('checked')
+            $(this).addClass('checked');
         });
     });
-    $(document).click(function(e){
-        var target = $(e.target);
-        if($.isEmptyObject(target.closest('.club-a-selected')[0])){
-            sItem.hide();
-        }
+
+
+    //模拟select下拉
+    $('.club-a-select').each(function(){
+        var selects = $(this),
+            curPanel = selects.find('.club-a-selected'),
+            sItem = selects.find('.club-a-select-item');
+        curPanel.click(function(){
+            var em = $(this).find('em');
+            sItem.show().find('li').click(function(){
+                em.html($(this).text());
+                sItem.hide();
+            });
+        });
+        $(document).click(function(e){
+            var target = $(e.target);
+            if($.isEmptyObject(target.closest('.club-a-selected')[0])){
+                sItem.hide();
+            }
+        });
     });
 
     //上传图片本地预览
@@ -68,8 +72,8 @@
 
     //俱乐部冠名验证
     $('.club-t-form').on('submit', function(){
-        var titleVal = $('.club-t-name-title').val(),
-            nameVal = $('.club-t-name-pro').val();
+        var titleVal = $.trim($('.club-t-name-title').val()),
+            nameVal = $.trim($('.club-t-name-pro').val());
         if(titleVal == ''){
             $('.club-t-name-title').parent().siblings('.club-error').html('冠名商名称不能为空！').show();
             return false;
@@ -86,10 +90,10 @@
 
     //俱乐部资料验证
     $('.club-d-form').on('submit', function(){
-        var titleVal = $('.club-d-name').val(),
-            perVal = $('.club-d-per').val(),
-            relateVal = $('.club-d-relate').val(),
-            phoneVal = $('.club-d-phone').val(),
+        var titleVal = $.trim($('.club-d-name').val()),
+            perVal = $.trim($('.club-d-per').val()),
+            relateVal = $.trim($('.club-d-relate').val()),
+            phoneVal = $.trim($('.club-d-phone').val()),
             phoneReg = /^((0\d{2,3})-)?(\d{7,8})(-(\d{3,}))?$/;
 
         if(titleVal == ''){
@@ -120,10 +124,10 @@
 
     //添加运动员验证
     $('.club-a-form').on('submit', function(){
-        var nameVal = $('.club-a-name').val(),
-            authVal = $('.club-a-auth').val(),
-            typeVal = $('.club-a-select').find('.club-a-selected em').html(),
-            mailVal = $('.club-a-mail').val(),
+        var nameVal = $.trim($('.club-a-name').val()),
+            authVal = $.trim($('.club-a-auth').val()),
+            typeVal = $.trim($('.j-a-select').find('.club-a-selected em').html()),
+            mailVal = $.trim($('.club-a-mail').val()),
             mailReg = /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/;
 
         if(nameVal == ''){
@@ -139,10 +143,10 @@
             $('.club-a-auth').parent().siblings('.club-error').hide();
         }
         if(typeVal == '请选择'){
-            $('.club-a-select').parent().siblings('.club-error').html('请选择身份类型！').show();
+            $('.j-a-select').parent().siblings('.club-error').html('请选择身份类型！').show();
             return false;
         }else{
-            $('.club-a-select').parent().siblings('.club-error').hide();
+            $('.j-a-select').parent().siblings('.club-error').hide();
         }
         if(mailVal == '' || !mailReg.test(mailVal)){
             $('.club-a-mail').parent().siblings('.club-error').html('请输入正确的邮箱！').show();
@@ -153,19 +157,153 @@
     });
 
     //性别、身份类型的隐藏域赋值
-    $('.club-a-sex .check').on('click', function(){
-        if($(this).siblings().html() == '男' ){
-            $('.club-hidden-sex').val('男');
+    $('.j-sex .check,.j-b-sex .check,.j-b-type .check').on('click', function(){
+        $(this).parents('.club-t-items-para').siblings('.club-hidden-sex').val($(this).siblings().html());
+    });
+
+    $('.j-a-select .club-a-select-item,.j-b-select .club-a-select-item,.j-b-stand .club-a-select-item').find('li').on('click', function(){
+        $(this).parents('.club-t-items-para').siblings('.club-hidden-type').val($(this).text());
+    });
+
+    $('.con-select').each(function(){
+        var selects = $(this),
+            curPanel = selects.find('.con-select-text'),
+            sItem = selects.find('.con-select-item');
+
+        curPanel.click(function(){
+            var em = $(this).find('em');
+            sItem.show().find('li').click(function(){
+                em.html($(this).text());
+                sItem.hide();
+            });
+        });
+        $(document).click(function(e){
+            var target = $(e.target);
+            if($.isEmptyObject(target.closest('.con-select-text')[0])){
+                sItem.hide();
+            }
+        });
+    });
+
+    //取消报名验证
+    $('.club-reg-c').on('submit', function(){
+        var nameVal = $.trim($('.club-reg-c-name').val()),
+            authVal = $.trim($('.club-reg-c-auth').val()),
+            numVal = $.trim($('.club-reg-c-num').val());
+
+        if(nameVal == ''){
+            $('.club-reg-c-name').parent().siblings('.club-error').html('姓名不能为空！').show();
+            return false;
         }else{
-            $('.club-hidden-sex').val('女');
+            $('.club-reg-c-name').parent().siblings('.club-error').hide();
+        }
+        if(authVal == ''){
+            $('.club-reg-c-auth').parent().siblings('.club-error').html('证件号码不能为空！').show();
+            return false;
+        }else{
+            $('.club-reg-c-auth').parent().siblings('.club-error').hide();
+        }
+        if(numVal == ''){
+            $('.club-reg-c-num').parent().siblings('.club-error').html('报名号码不能为空！').show();
+            return false;
+        }else{
+            $('.club-reg-c-num').parent().siblings('.club-error').hide();
         }
     });
 
-    $('.club-a-select .club-a-select-item').find('li').on('click', function(){
-        if($(this).text() == '中国大陆'){
-            $('.club-hidden-type').val('中国大陆');
-        }else if($(this).text() == '港澳台地区'){
-            $('.club-hidden-type').val('港澳台地区');
+    //多选框
+    var checkOnes = $('.j-b-id .check,.j-b-items .check');
+
+    checkOnes.on('click', function() {
+        if ($(this).hasClass('checked')) {
+            $(this).removeClass('checked');
+        } else {
+            $(this).addClass('checked');
+        }
+    });
+
+    $('.club-b-textarea textarea').on({
+        'input propertychange' : function(){
+            $('.club-b-static em').html($.trim($(this).val()).length);
+        }
+    });
+
+    $('.j-b-id .check').on('click', function(){
+        var array = [];
+        $('.j-b-id .checked').each(function(){
+            array.push($(this).siblings().html());
+        });
+        $(this).parents('.club-t-items-para').siblings('.j-hidden-box').val(array.join(','));
+    });
+    $('.j-b-items .check').on('click', function(){
+        var array = [];
+        $('.j-b-items .checked').each(function(){
+            array.push($(this).siblings().html());
+        });
+        $(this).parents('.club-t-items-para').siblings('.j-hidden-box').val(array.join(','));
+    });
+
+    $('.club-b-form').on('submit', function(){
+        var nameVal = $.trim($('.club-b-name').val()),                  //姓名
+            idVal = $.trim($('.club-b-id').val()),                      //证件号码
+            sexVal = $.trim($('.j-b-sex .club-hidden-sex').val()),      //性别
+            ageVal = $.trim($('.j-b-select').parent().siblings('.club-hidden-type').val()),  //年龄
+            phoneVal = $.trim($('.club-b-phone').val()),                //联系电话
+            mailVal = $.trim($('.club-b-mail').val()),                  //电子邮件
+            regVal = $.trim($('.j-b-type .club-hidden-sex').val()),      //户籍类型
+            perval = $.trim($('.j-b-id .j-hidden-box').val()),          //参赛身份
+            itemsVal = $.trim($('.j-b-items .j-hidden-box').val()),     //参赛项目
+            standVal = $.trim($('.j-b-stand .club-hidden-type').val()), //代 表 队
+            boxVal = $.trim($('.club-b-textBox textarea').val()),       //其他代表队
+            mailReg = /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/;
+
+        if(nameVal == ''){
+            $('.club-b-name').parent().siblings('.club-error').html('姓名不能为空！').show();
+            return false;
+        }else{
+            $('.club-b-name').parent().siblings('.club-error').hide();
+        }
+        if(idVal == ''){
+            $('.club-b-id').parent().siblings('.club-error').html('证件号码不能为空！').show();
+            return false;
+        }else{
+            $('.club-b-id').parent().siblings('.club-error').hide();
+        }
+        if(ageVal == ''){
+            $('.j-b-select').parent().siblings('.club-error').html('年龄不能为空！').show();
+            return false;
+        }else{
+            $('.j-b-select').parent().siblings('.club-error').hide();
+        }
+        if(phoneVal == ''){
+            $('.club-b-phone').parent().siblings('.club-error').html('联系电话不能为空！').show();
+            return false;
+        }else{
+            $('.club-b-phone').parent().siblings('.club-error').hide();
+        }
+        if(mailVal == '' || !mailReg.test(mailVal)){
+            $('.club-b-mail').parent().siblings('.club-error').html('请输入正确的电子邮件！').show();
+            return false;
+        }else{
+            $('.club-b-mail').parent().siblings('.club-error').hide();
+        }
+        if(perval == ''){
+            $('.j-b-id .club-b-box').parent().siblings('.club-error').html('参赛身份不能为空！').show();
+            return false;
+        }else{
+            $('.j-b-id .club-b-box').parent().siblings('.club-error').hide();
+        }
+        if(itemsVal == ''){
+            $('.j-b-items .club-b-box').parent().siblings('.club-error').html('参赛项目不能为空！').show();
+            return false;
+        }else{
+            $('.j-b-items .club-b-box').parent().siblings('.club-error').hide();
+        }
+        if(boxVal == ''){
+            $('.club-b-textBox').parent().siblings('.club-error').html('其他代表队信息不能为空！').show();
+            return false;
+        }else{
+            $('.club-b-textBox').parent().siblings('.club-error').hide();
         }
     });
 })();
