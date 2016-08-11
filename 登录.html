@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/login.min.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<div class="big_bg"></div>
+			<div class="entry window">
+				<div class="logo"></div>
+				<h3 class="title">
+					<span class="title_l">登录</span>
+					<span class="title_r"> / Login</span>
+				</h3>
+				<form action="" class="login-form">
+					<ul class="content">
+						<li class="item clearfix">
+							<span class="item_t fl">账号</span>
+							<div class="fl"><input class="text input login-account" type="text" placeholder="请输入账号" /></div>
+							<span class="bg fl"></span>
+							<span class="login-error"></span>
+						</li>
+						<li class="item clearfix">
+							<span class="item_t fl">密码</span>
+							<div class="fl"><input class="text input login-password" type="password" placeholder="请输入密码" /></div>
+							<span class="bg fl"></span>
+							<span class="login-error"></span>
+						</li>
+					</ul>
+					<input type="submit" class="btn cursor" value="登&nbsp;录"/>
+				</form>
+				<div class="bottom clearfix">
+					<a href="" class="fl">忘记密码？</a>
+					<span class="line fl"></span>
+					<a href="" class="fl">注册</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-3.1.0.js"></script>
+<script>
+(function(){
+	$('.login-form').on('submit', function(){
+		var nameVal = $.trim($('.login-account').val()),
+			passVal = $.trim($('.login-password').val());
+
+		if(nameVal == ''){
+			$('.login-account').parent().siblings('.login-error').html('账号不能为空！').show();
+			return false;
+		}else{
+			$('.login-account').parent().siblings('.login-error').hide();
+		}
+
+		if(passVal == ''){
+			$('.login-password').parent().siblings('.login-error').html('密码不能为空！').show();
+			return false;
+		}else{
+			$('.login-password').parent().siblings('.login-error').hide();
+		}
+	});
+})();
+</script>

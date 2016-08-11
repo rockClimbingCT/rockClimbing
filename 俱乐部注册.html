@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>俱乐部注册</title>
+		<link rel="stylesheet" type="text/css" href="css/login.min.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<div class="big_bg"></div>
+			<div class="window window5">
+				<div class="logo"></div>
+				<h3 class="title">
+					<span class="title_l">俱乐部注册</span>
+					<span class="title_r"> / Register</span>
+				</h3>
+				<form action="" class="reg-club">
+					<ul class="content clearfix">
+						<li class="item clearfix">
+							<span class="star fl">*</span>
+							<span class="item_t fl">名称</span>
+							<div class="fl"><input class="text input reg-club-name" type="text"  /></div>
+							<span class="bg fl"></span>
+							<span class="login-error"></span>
+						</li>
+						<li class="item clearfix">
+							<span class="star fl"></span>
+							<span class="item_t fl">缩写</span>
+							<div class="fl"><input class="text input reg-club-abbr" type="text" /></div>
+							<span class="bg fl"></span>
+							<span class="login-error"></span>
+						</li>
+						<li class="item clearfix">
+							<span class="star fl">*</span>
+							<span class="item_t fl">法人</span>
+							<div class="fl"><input class="text input reg-club-per" type="text" /></div>
+							<span class="bg fl"></span>
+							<span class="login-error"></span>
+						</li>
+						<li class="item clearfix">
+							<span class="star fl">*</span>
+							<span class="item_t fl">联系人</span>
+							<div class="fl"><input class="text input reg-club-relate" type="text" /></div>
+							<span class="bg fl"></span>
+							<span class="login-error"></span>
+						</li>
+						<li class="item clearfix">
+							<span class="star fl">*</span>
+							<span class="item_t fl">邮箱</span>
+							<div class="fl"><input class="text input reg-club-mail" type="text" /></div>
+							<span class="bg fl"></span>
+							<span class="login-error"></span>
+						</li>
+						<li class="item clearfix">
+							<span class="star fl">*</span>
+							<span class="item_t fl">电话</span>
+							<div class="fl"><input class="text input reg-club-phone" type="text" /></div>
+							<span class="bg fl"></span>
+							<span class="login-error"></span>
+						</li>
+						<li class="item clearfix">
+							<span class="star fl"></span>
+							<span class="item_t fl">传真</span>
+							<div class="fl"><input class="text input reg-club-fax" type="text" /></div>
+							<span class="bg fl"></span>
+							<span class="login-error"></span>
+						</li>
+						<li class="item clearfix">
+							<span class="star fl"></span>
+							<span class="item_t fl">地址</span>
+							<div class="fl"><input class="text input reg-club-address" type="text" /></div>
+							<span class="bg fl"></span>
+							<span class="login-error"></span>
+						</li>
+						<li class="item clearfix">
+							<span class="star fl"></span>
+							<span class="item_t fl">邮编</span>
+							<div class="fl"><input class="text input reg-club-code" type="text" /></div>
+							<span class="bg fl"></span>
+							<span class="login-error"></span>
+						</li>
+					</ul>
+					<div class="upload clearfix">
+						<div class="up_left clearfix fl">
+							<span class="star fl">*</span>
+							<span class="up_title fl">资质文件</span>
+						</div>
+						<div class="up_mid fl clearfix">
+							<div class="cursor clearfix upload-file">
+								<span class="bg fl"></span>
+								<span class="blue fl">上传附件</span>
+								<input type="file" name="" id="" class="upload-file-btn"/>
+							</div>
+							<div class="gray">可上传压缩文件≤2M</div>
+						</div>
+						<div class="up_r_btn fl clearfix cursor">
+							<a href="javascript:;" class="fl">上传</a>
+						</div>
+					</div>
+					<input type="submit" class="btn cursor" value="注册"/>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-3.1.0.js"></script>
+<script>
+	(function(){
+		$('.reg-club').on('submit', function(){
+			var nameVal = $.trim($('.reg-club-name').val()),
+				perVal = $.trim($('.reg-club-per').val()),
+				relateVal = $.trim($('.reg-club-relate').val()),
+				mailVal = $.trim($('.reg-club-mail').val()),
+				phoneVal = $.trim($('.reg-club-phone').val()),
+				mailReg = /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/g,
+				phoneReg = /^((0\d{2,3})-)?(\d{7,8})(-(\d{3,}))?$/g;
+
+			if(nameVal == ''){
+				$('.reg-club-name').parent().siblings('.login-error').html('请输入名称！').show();
+				return false;
+			}else{
+				$('.reg-club-name').parent().siblings('.login-error').hide();
+			}
+			if(perVal == ''){
+				$('.reg-club-per').parent().siblings('.login-error').html('请输入法人！').show();
+				return false;
+			}else{
+				$('.reg-club-per').parent().siblings('.login-error').hide();
+			}
+			if(relateVal == ''){
+				$('.reg-club-relate').parent().siblings('.login-error').html('请输入联系人！').show();
+				return false;
+			}else{
+				$('.reg-club-relate').parent().siblings('.login-error').hide();
+			}
+
+			if(mailVal == '' || !mailReg.test(mailVal)){
+				$('.reg-club-mail').parent().siblings('.login-error').html('请输入正确的邮箱！').show();
+				return false;
+			}else{
+				$('.reg-club-mail').parent().siblings('.login-error').hide();
+			}
+			if(phoneVal == '' || !phoneReg.test(phoneVal)){
+				$('.reg-club-phone').parent().siblings('.login-error').html('请输入正确的电话！').show();
+				return false;
+			}else{
+				$('.reg-club-phone').parent().siblings('.login-error').hide();
+			}
+		});
+	})();
+</script>
