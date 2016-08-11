@@ -190,3 +190,119 @@
     .chengji-btn{ float: left;}
     .chengji-btn a{margin: 2px 10px 2px 0px;}
 }
+
+/*查看赛事成绩*/
+.checkgrade-wrap{ padding: 10px 10px 0px 20px; overflow: hidden;}
+.checkgrade-box{ padding-left: 12px;position: relative;}
+
+.checkgrade-left-line{width: 1px; height: 100%; position: absolute;left: 5px; top: 17px;
+    background: -webkit-linear-gradient(top, #ced9f2 , #fff);
+    background: -moz-linear-gradient(top, #ced9f2 , #fff);
+}
+
+.checkgrade-head{position: relative;}
+.checkgrade-head .line{width: 33%;min-width: 190px; height: 1px; position: absolute;left: -7px; top: 17px;z-index: 1;
+    background: -webkit-linear-gradient(left, #ced9f2 , #fff);
+    background: -moz-linear-gradient(left, #ced9f2 , #fff);
+}
+.checkgrade-head .dot{ width: 6px; height: 6px;border: 3px solid #3b64c4;background-color: #fff;border-radius: 50%; position: absolute;left: -12px; top: 11px;z-index: 3;}
+.checkgrade-head .title{ display: inline-block;font-size: 16px; color: #3b64c4; line-height: 34px;padding: 0 7px;background-color: #fff; position: relative;z-index: 2;margin-left: 6px;}
+.checkgrade-head .title span{font-size: 14px; color: #666666; }
+
+.checkgrade-dl{padding-bottom: 11px;}
+.checkgrade-dd{float: left; padding: 10px 12px 10px 13px;}
+.checkgrade-item{display: block; width: 166px; height: 38px; line-height: 38px; border: 1px solid #ced9f2;background-color: #f6f6f6; color: #3b64c4; text-align: center;white-space: nowrap;overflow: hidden; text-overflow: ellipsis;}
+
+
+/*直播*/
+.zhibo-head{background-color: rgba(32,70,158,0.7); padding: 10px 12px;}
+.zhibo-head .logo{float: left; width: 44px; height: 44px; background: url("../img/yundong_big.png") no-repeat;}
+.zhibo-head .zhibo-title{padding-left: 56px; color: #8ea9e9;}
+.zhibo-head .zhibo-title h3{ font-size: 16px; line-height: 22px;padding: 3px 0;}
+.zhibo-head .zhibo-title p{ font-size: 12px; line-height: 16px;}
+
+.video-wrap{padding: 18px 10px 11px 10px; background: url("../img/zhibo_bg.jpg") no-repeat;background-size: 100% 100%;}
+.video-box{
+    width: 100%;
+    display:-moz-box;
+    display:-webkit-box;
+    display:box;
+}
+.video-flex{
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+}
+.video-flex .video{ display: block;width: 100%;vertical-align: top;}
+
+.chat-wrap{width: 350px;position: relative;background: rgba(3,35,108,0.6);}
+.chat-box{padding: 13px 20px 16px 20px;overflow: hidden;}
+.chat-list{ width: 100%;/* height: 448px;*/ height: 603px;overflow: auto;}
+
+.chat-title{}
+.chat-title .name{ float: left;line-height: 22px; color: #fff045;padding-right: 18px;}
+.chat-title .time{ float: left;line-height: 22px; color: #fff045;}
+
+.chat-content{margin: 5px 0 15px 5px;padding: 5px 12px 6px 12px; line-height: 20px; color: #333333;background-color: #e1e8f8;border-radius: 5px; position: relative;}
+.chat-content:before{content: '';width: 8px; height: 16px;background: url("../img/sanjiao.png") no-repeat;position: absolute; left: -4px; top: -5px;}
+
+.chat-send-box{ width: 100%; height: 60px; position: absolute; left: 0px; bottom: 0px;}
+.chat-send-con{ margin: 0 10px 0 20px;}
+.chat-send-text{ float: left;padding: 5px 10px; width: 221px; min-height: 26px; line-height: 26px;border: 2px solid #fff045;background-color: transparent;}
+.chat-send-btn{ float: left; width: 75px; height: 40px;background-color: #fff045; text-align: center; line-height: 40px; color: #2b55bb; font-size: 14px;}
+
+
+@media (max-width: 1200px) {
+    .chat-list{ height: 411px;}
+}
+
+.chat-tip-wrap{ width: 100%; position: absolute; left: 0; bottom: 82px;background: rgba(23,54,128,0.7);}
+.chat-tip-icon{float: left; width: 17px; height: 16px;background: url("../img/yellow_time.png") no-repeat;margin: 11px 0 0 20px;}
+.chat-tip-content{padding: 10px 46px 7px 46px; line-height: 20px; color: #fff045;}
+.chat-tip-wrap .close{width: 13px; height: 13px;background: url("../img/close.png") no-repeat; position: absolute; right: 21px; top: 13px;opacity: 1;}
+
+.zhibo-main-wrap{background-color: #fff;padding: 31px 0 40px 0;}
+.zhibo-main-left{padding: 0 40px 0 20px;}
+.zhibo-main-right{}
+
+.zhibo-select-box{padding: 5px 0 15px 0;}
+.zhibo-sel-item{ float: left; width: 146px; height: 38px; line-height: 38px; border: 1px solid #ced9f2;background-color: #f6f6f6; color: #3b64c4; text-align: center;margin: 5px 7px 5px 0px;}
+.zhibo-sel-item:last-child{margin-right: 0px;}
+.zhibo-sel-item:hover,
+.zhibo-sel-item.active{background-color: #3b64c4; border-color: #3b64c4; color: #fff;}
+
+@media (min-width: 1230px) {
+    .zhibo-main-l-box{width: 830px;}
+    .zhibo-main-r-box{width: 370px;}
+}
+
+
+@media (max-width: 992px) {
+    .zhibo-main-left{padding-right: 0px;padding-left: 0px;}
+}
+
+/*index.css*/
+.con-schedule,.con-action{padding-top:20px;background:#f6f6f6;}
+.con-schedule .con-reg-title,.con-action .con-reg-title{height:36px;line-height:36px;padding-left:20px;}
+.con-schedule .con-reg-tip,.con-action .con-reg-tip{background: url("../img/tip3.png") no-repeat;margin-top:10px;height:16px;}
+.con-schedule .con-reg-title,.con-action .con-reg-title{border-bottom:1px solid #d6dae3;}
+.con-schedule .con-reg-text,.con-action .con-reg-text{color:#3b64c4;font-size:16px;}
+.con-schedule .con-reg-line,.con-schedule .con-reg-sub,.con-action .con-reg-line,.con-action .con-reg-sub{color:#999999;padding-top:2px;font-family:"Microsoft YaHei";}
+
+.con-light{padding:10px 20px 10px 15px;background: #fff045;margin-top:20px;}
+.con-light i{float:left;width:18px;height:20px;background: url("../img/light.png") no-repeat;}
+.con-light p{line-height:20px;color:#222222;float:left;width:92%;margin-left:4px; text-align: justify;}
+.con-rate{margin:25px 0px 16px 30px;}
+.con-rate dl{border-left:1px solid #ced9f2;}
+.con-rate dd{width:278px;padding:20px 0 20px 20px;position:relative;}
+.con-rate-top{width:296px;height:1px;overflow:hidden;position:absolute;top:0;left:2px;background: url("../img/line.png") no-repeat;}
+.con-rate-circle{width:12px;height:12px;overflow:hidden;position:absolute;top:-6px;left:-6px;background: url("../img/circle.png") no-repeat;}
+.con-rate-time{font-size:14px;color:#3b64c4;line-height:24px;position:absolute;left:20px;top:-12px;}
+.con-rate-list{padding:5px 0 0 4px;}
+.con-rate-list li{line-height:24px;color:#333;font-size:12px;}
+.con-rate-list li span{color:#6a6a6a;padding-right:28px;}
+/*index.css*/
+
+.zhibo-main-wrap .con-rate{margin-bottom: 0px;}
+.ewm-wrap{background-color: #d8e0f3;padding: 27px 10px 29px 18px;}
+.ewm-wrap .thumbnail{background-color: transparent;margin-bottom: 0px;padding: 0px;}
