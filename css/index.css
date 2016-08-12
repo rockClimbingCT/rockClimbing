@@ -20,7 +20,7 @@
 
 
 *{box-sizing: content-box;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;}
-.container{padding-right: 0px;padding-left: 0px;overflow: hidden;}
+.container{padding-right: 0px;padding-left: 0px;/*overflow: hidden;*/}
 .first-box{padding-right: 0px;padding-left: 0px;}
 .second-box{padding-right: 0px;padding-left: 0px;}
 .three-box{padding-right: 0px;padding-left: 0px;}
@@ -296,9 +296,16 @@
 	.second-box .con-reg-more{ width: 17px; height: 29px; margin: 7px 3px 0 0;background: url("../img/arrow3.png") no-repeat;font-size: 0px;background-size: 100% 100%; overflow: hidden;}
 }
 
-@media(max-width:582px) {
+/*@media(max-width:582px) {
 	.con-reg-title{ margin-bottom: 20px;}
-}
+}*/
+#con-right1,#con-right2{transition:ease 0.2s;-webkit-transition:ease 0.2s;-moz-transition:ease 0.2s;-ms-transition:ease 0.2s;}
+.con-reg-title:after{transition:transform ease 0.3s;-webkit-transition:-webkit-transform ease 0.3s;-moz-transition:-webkit-transform ease 0.3s;-ms-transition:-webkit-transform ease 0.3s;}
+.con-reg-title.collapsed:after {transform: rotate(-180deg);-moz-transform: rotate(-180deg);-ms-transform: rotate(-180deg);-webkit-transform: rotate(-180deg);}
+
+
+
+
 
 
 
