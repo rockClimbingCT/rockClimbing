@@ -124,7 +124,7 @@
 .thumbnail-box .black-bg{width: 96px; height: 96px;background: #000000; position: absolute; left: -7px; top: -6px; z-index: 1;}
 .thumbnail-box .thumbnail-img{ position: relative;z-index: 4;}
 .thumbnail-box .bobao-ing{width: 32px; height: 100%;background: rgba(0,0,0,0.6); position: absolute; left: 0px; top: 0px; z-index: 5;}
-.thumbnail-box .bobao-ing span{ display: block; width: 16px; height: 16px;background: url("../img/status.png") no-repeat;margin: 17px auto 6px auto;}
+.thumbnail-box .bobao-ing span{ display: block; width: 16px; height: 16px;background: url("../img/status.png") no-repeat;margin: 12px auto 6px auto;}
 .thumbnail-box .bobao-ing p{ color: #fff;width: 16px;text-align: center;margin: 0 auto; line-height: 14px;}
 
 @media (min-width: 768px) {
