@@ -14,9 +14,10 @@
 .content-bg{padding: 40px 0; background: url("../img/contentbg.jpg") center top;}
 .container-white{background: #ffffff;}
 
-.ssbm-title{ height: 30px;padding: 14px 20px 15px 20px; border-top: 1px solid rgba(104,132,232,0.1); border-bottom: 1px solid #d6dae3;}
+.ssbm-title{ /*height: 30px;*/padding: 14px 20px 15px 20px; border-top: 1px solid rgba(104,132,232,0.1); border-bottom: 1px solid #d6dae3;}
+.ssbm-title:after{ content: '';display: block;clear: both;}
 .ssbm-title .line{ float: left; width: 3px; height: 20px; background: url("../img/tip2.png") no-repeat; margin: 5px 10px 0 0;}
-.ssbm-title .head{ float: left;color:#3b64c4;font-size: 20px; line-height: 30px;}
+.ssbm-title .head{ color:#3b64c4;font-size: 20px; line-height: 30px;}
 .ssbm-title .english{ float: left; color: #999999;font-size: 12px; line-height: 20px;margin-top: 10px;margin-right: 2px;}
 .ssbm-title .english span{padding: 0 2px 0 6px;}
 
