@@ -105,7 +105,7 @@
 
 .con-pic-l{margin-top:40px;/*width:770px;height:296px;*/position:relative;}
 .con-pic-blue{width:100%;height:56%;/* height:174px; */background: #3b64c4;position:absolute;top:0;left:0;}
-.con-slide-l{height:260px;position:relative;top:35px;left:0;overflow:hidden;padding: 0 8px;}
+.con-slide-l{position:relative;top:35px;left:0;overflow:hidden;padding: 0 8px;}
 .con-slide-pic{position:relative;}
 /*.con-slide-pic ul{float:left;}*/
 .con-slide-pic li{float:left;width:186px;height:260px;margin-right:4px;position:relative;}
