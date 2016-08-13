@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>忘记密码</title>
+		<link rel="stylesheet" type="text/css" href="../css/login.min.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<div class="big_bg"></div>
+			<div class="window window4">
+				<div class="logo"></div>
+				<h3 class="title">
+					<span class="title_l">密码找回</span>
+					<span class="title_r"> / Password back</span>
+				</h3>
+				<form action="" class="pass-find">
+					<ul class="content clearfix">
+						<li class="item clearfix">
+							<span class="star fl">*</span>
+							<span class="item_t fl">账号</span>
+							<div class="fl"><input class="text input pass-find-user" type="text" placeholder="请输入账号" /></div>
+							<span class="bg fl"></span>
+							<span class="login-error"></span>
+						</li>
+						<li class="item clearfix">
+							<span class="star fl">*</span>
+							<span class="item_t fl">邮箱</span>
+							<div class="fl"><input class="text input pass-find-mail" type="text"  placeholder="请输入邮箱" /></div>
+							<span class="bg fl"></span>
+							<span class="login-error"></span>
+						</li>
+					</ul>
+					<div class="foot clearfix">
+						<div class="fl"><input type="submit" class="btn cursor" value="提交"/></div>
+						<a href="" class="btn2 fl">登录</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../js/jquery-3.1.0.js"></script>
+<script>
+	(function(){
+		$('.pass-find').on('submit', function(){
+			var userVal = $.trim($('.pass-find-user').val()),
+				mailVal = $.trim($('.pass-find-mail').val()),
+				mailReg = /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/g;
+
+			if(userVal == ''){
+				$('.pass-find-user').parent().siblings('.login-error').html('请输入账号！').show();
+				return false;
+			}else{
+				$('.pass-find-user').parent().siblings('.login-error').hide();
+			}
+
+			if(mailVal == '' || !mailReg.test(mailVal)){
+				$('.pass-find-mail').parent().siblings('.login-error').html('请输入正确的邮箱！').show();
+				return false;
+			}else{
+				$('.pass-find-mail').parent().siblings('.login-error').hide();
+			}
+		});
+	})();
+</script>

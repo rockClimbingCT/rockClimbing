@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>修改密码</title>
+		<link rel="stylesheet" type="text/css" href="../css/login.min.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<div class="big_bg"></div>
+			<div class="window window3">
+				<div class="logo"></div>
+				<h3 class="title">
+					<span class="title_l">修改密码</span>
+					<span class="title_r"> / Modify the password</span>
+				</h3>
+				<form action="" class="pass-edit">
+					<ul class="content clearfix">
+						<li class="item clearfix">
+							<span class="star fl">*</span>
+							<span class="item_t fl">旧密码</span>
+							<div class="fl"><input class="text input pass-old" type="password" placeholder="请输入旧密码" /></div>
+							<span class="bg fl"></span>
+							<span class="login-error"></span>
+						</li>
+						<li class="item clearfix">
+							<span class="star fl">*</span>
+							<span class="item_t fl">新密码</span>
+							<div class="fl"><input class="text input pass-new" type="password"  placeholder="请输入新密码" /></div>
+							<span class="bg fl"></span>
+							<span class="login-error"></span>
+						</li>
+						<li class="item clearfix">
+							<span class="star fl">*</span>
+							<span class="item_t fl">确认新密码</span>
+							<div class="fl"><input class="text input pass-new-re" type="password"  placeholder="请再次输入新密码" /></div>
+							<span class="bg fl"></span>
+							<span class="login-error"></span>
+						</li>
+					</ul>
+					<div class="foot">
+						<input type="submit" class="btn cursor" value="提交"/>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../js/jquery-3.1.0.js"></script>
+<script>
+	(function(){
+		$('.pass-edit').on('submit', function(){
+			var oldVal = $.trim($('.pass-old').val()),
+				newVal = $.trim($('.pass-new').val()),
+				reNewVal = $.trim($('.pass-new-re').val());
+
+			if(oldVal == ''){
+				$('.pass-old').parent().siblings('.login-error').html('请输入旧密码！').show();
+				return false;
+			}else{
+				$('.pass-old').parent().siblings('.login-error').hide();
+			}
+
+			if(newVal == ''){
+				$('.pass-new').parent().siblings('.login-error').html('请输入新密码！').show();
+				return false;
+			}else{
+				$('.pass-new').parent().siblings('.login-error').hide();
+			}
+			if(reNewVal != newVal){
+				$('.pass-new-re').parent().siblings('.login-error').html('请输入正确的确认密码！').show();
+				return false;
+			}else{
+				$('.pass-new-re').parent().siblings('.login-error').hide();
+			}
+		});
+	})();
+</script>

@@ -311,3 +311,26 @@
 @media (max-width: 1200px) {
     .zhibo-main-left{padding-right: 20px;}
 }
+
+
+/*关于我们*/
+.indexMain-wrap.about,.indexMain-wrap.back,.indexMain-wrap.reg-c,.indexMain-wrap.reg-b{padding:40px 0;}
+.indexMain-wrap.about .container{min-height:640px;}
+.indexMain-wrap.about .con-calendar,.indexMain-wrap.back .con-calendar,.indexMain-wrap.reg-c .con-calendar,.indexMain-wrap.reg-b .con-calendar{padding-top:0;}
+.indexMain-wrap.about .con-reg-title,.indexMain-wrap.back .con-reg-title,.indexMain-wrap.reg-c .con-reg-title,.indexMain-wrap.reg-b .con-reg-title{height:60px;line-height:60px;padding-left:20px;}
+.indexMain-wrap.about .con-reg-tip,.indexMain-wrap.back .con-reg-tip,.indexMain-wrap.reg-c .con-reg-tip,.indexMain-wrap.reg-b .con-reg-tip{margin-top:21px;}
+.indexMain-wrap.about .con-reg-line,.indexMain-wrap.back .con-reg-line,.indexMain-wrap.reg-c .con-reg-line,.indexMain-wrap.reg-b .con-reg-line{padding-top:16px;}
+.indexMain-wrap.about .con-reg-sub,.indexMain-wrap.back .con-reg-sub,.indexMain-wrap.reg-c .con-reg-sub,.indexMain-wrap.reg-b .con-reg-sub{padding-top:18px;}
+.about-para{padding:35px 40px 0;}
+.about-text p{line-height:28px;font-size:16px;color:#666;padding-top:28px;text-indent:2em;}
+.about-note{padding-top:56px;}
+.about-note p{line-height:28px;font-size:16px;color:#666;text-align:right;}
+.about-note p.about-date{line-height:30px;font-size:12px;color:#999;}
+.about-para .col-sm-6{padding:0;}
+.about-pic{margin:10px 0 0 30px;}
+.about-pic img{width:100%;height:auto;}
+
+
+
+
+

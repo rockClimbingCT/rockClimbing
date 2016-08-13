@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>攀岩在线--俱乐部冠名</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/houtai.css" rel="stylesheet">
+
+    <script src="../js/jquery-3.1.0.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="g-header">
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle g-fun" data-toggle="collapse" data-target=".navbar-collapse"></button>
+                <a class="navbar-brand g-logo" href="javascript:;"><img src="../img/logo.png" alt=""/></a>
+            </div>
+            <span class="g-arrow"></span>
+            <div class="collapse navbar-collapse" >
+                <ul class="nav navbar-nav">
+                    <li class="g-nav-li g-nav-first"><a href="javascript:;"><em>首页</em><span>HOME</span></a></li>
+                    <li class="g-nav-li active"><a href="javascript:;"><em>俱乐部管理</em><span>REGISTER</span></a></li>
+                    <li class="g-nav-li g-nav-blank"></li>
+                    <li class="g-login"><a href="javascript:;"><em><i></i>登录</em><span>LOGIN</span></a></li>
+                    <!--登录后-->
+                    <!--<li class="g-login-after dropdown">
+                        <a href="javascript:;" class="g-login-sub" data-toggle="dropdown"><em>用户名<i></i></em></a>
+                        <dl class="g-login-drop dropdown-menu clearfix" aria-labelledby="dLabel">
+                            <dd><a href="javascript:;"><em>俱乐部注册</em><span>BINDING</span></a></dd>
+                            <dd><a href="javascript:;"><em>修改密码</em><span>MODIFY THE PASSWORD</span></a></dd>
+                            <dd><a href="javascript:;"><em>退出</em><span>SIGN OUT</span></a></dd>
+                        </dl>
+                    </li>-->
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!--主要内容区域-->
+<div class="indexMain-wrap reg-a">
+    <div class="container">
+        <div class="clearfix club-t-con club-d-con">
+            <div class="club-t-l fl">
+                <dl class="club-t-list">
+                    <dt><span class="club-t-title"><i></i></span></dt>
+                    <dd class="club-t-list1 active"><a href="javascript:;"><i class="club-t-icon"></i><em>运动员管理</em></a></dd>
+                    <dd class="club-t-list2"><a href="javascript:;"><i class="club-t-icon"></i><em>联赛报名管理</em></a></dd>
+                    <dd class="club-t-list3"><a href="javascript:;"><i class="club-t-icon"></i><em>俱乐部资料</em></a></dd>
+                    <dd class="club-t-list4"><a href="javascript:;"><i class="club-t-icon"></i><em>俱乐部冠名</em></a></dd>
+                </dl>
+            </div>
+            <div class="club-t-r club-a-r fr">
+                <div class="club-d-dels">
+                    <div class="club-t-head">
+                        <i></i><span class="club-t-head-txt">添加运动员</span>
+                        <span class="club-t-wave"></span>
+                    </div>
+                    <div class="club-t-items">
+                        <form action="" class="club-a-form">
+                            <div class="club-t-items-list clearfix">
+                                <span class="club-t-items-txt fl"><i>*</i>姓名</span>
+                                <div class="club-t-items-para fl">
+                                    <input type="text" class="club-t-items-input club-a-name" name="" value=""/>
+                                </div>
+                                <span class="club-error"></span>
+                            </div>
+                            <div class="club-t-items-list club-items-list-sex j-sex clearfix">
+                                <span class="club-t-items-txt fl"><i>*</i>性别</span>
+                                <div class="club-t-items-para fl">
+                                    <div class="club-a-sex fl"><span class="check checked" ></span><label>男</label></div>
+                                    <div class="club-a-sex fl"><span class="check" ></span><label>女</label></div>
+                                </div>
+                                <input type="hidden" name="" class="club-hidden-sex" value="男"/>
+                                <span class="club-error"></span>
+                            </div>
+                            <div class="club-t-items-list clearfix">
+                                <span class="club-t-items-txt fl"><i>*</i>证件号码</span>
+                                <div class="club-t-items-para fl">
+                                    <input type="text" class="club-t-items-input club-a-auth" name="" value=""/>
+                                </div>
+                                <span class="club-error"></span>
+                            </div>
+                            <div class="club-t-items-list clearfix">
+                                <span class="club-t-items-txt fl"><i>*</i>身份类型</span>
+                                <div class="club-t-items-para fl">
+                                    <div class="club-a-select j-a-select">
+                                        <span class="club-a-selected"><em>请选择</em><i></i></span>
+                                        <div class="club-a-select-item" >
+                                            <ul class="club-a-select-list">
+                                                <li><a href="javascript:;">中国大陆</a></li>
+                                                <li><a href="javascript:;">港澳台地区</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="" class="club-hidden-type" value=""/>
+                                <span class="club-error"></span>
+                            </div>
+                            <div class="club-t-items-list clearfix">
+                                <span class="club-t-items-txt fl"><i>*</i>邮箱</span>
+                                <div class="club-t-items-para fl">
+                                    <input type="text" class="club-t-items-input club-a-mail" name="" value=""/>
+                                </div>
+                                <span class="club-error"></span>
+                            </div>
+                            <div class="club-t-items-list clearfix">
+                                <span class="club-t-items-txt fl"><i></i>联系电话1</span>
+                                <div class="club-t-items-para fl">
+                                    <input type="text" class="club-t-items-input" name="" value=""/>
+                                </div>
+                                <span class="club-error"></span>
+                            </div>
+                            <div class="club-t-items-list clearfix">
+                                <span class="club-t-items-txt fl"><i></i>联系电话2</span>
+                                <div class="club-t-items-para fl">
+                                    <input type="text" class="club-t-items-input" name="" value=""/>
+                                </div>
+                                <span class="club-error"></span>
+                            </div>
+                            <div class="club-t-items-list clearfix">
+                                <span class="club-t-items-txt fl"><i></i>通讯地址</span>
+                                <div class="club-t-items-para fl">
+                                    <input type="text" class="club-t-items-input" name="" value=""/>
+                                </div>
+                                <span class="club-error"></span>
+                            </div>
+                            <div class="club-t-items-list club-items-list-upload clearfix">
+                                <span class="club-t-items-txt fl"><i></i>运动员照片</span>
+                                <div class="club-t-items-para fl">
+                                    <div class="club-a-upload fl">
+                                        <img src="../img/club-blank.png" alt=""/>
+                                        <input type="file" class="club-a-upload-file"/>
+                                    </div>
+                                    <div class="fl club-a-upload-dels">
+                                        <a href="javascript:;" class="club-a-upload-add">上传照片</a>
+                                        <p class="club-a-upload-tip">运动员近期证件照*.gif*.jpg*.png≤1MB</p>
+                                    </div>
+                                </div>
+                                <span class="club-error"></span>
+                            </div>
+                            <input type="submit" class="club-t-submit" value="添加"/>
+                        </form>
+                        <span class="club-t-bg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p><span>京ICP备11045195号-3</span><span>Copyright © 2000-2012 by www.cmaol.com all rights reserved</span></p>
+</div>
+</body>
+</html>
+<script src="../js/top.js"></script>
