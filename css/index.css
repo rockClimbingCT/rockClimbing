@@ -108,10 +108,10 @@
 .con-slide-l{position:relative;top:35px;left:0;overflow:hidden;padding: 0 8px;}
 .con-slide-pic{position:relative;}
 /*.con-slide-pic ul{float:left;}*/
-.con-slide-pic li{float:left;width:186px;height:260px;margin-right:4px;position:relative;}
+.con-slide-pic li{float:left;width:186px;/*height:260px;*/margin-right:4px;position:relative;}
 .con-slide-pic li,.con-slide-pic li a,.con-slide-pic li img,.con-slide-pic li i{transition:0.2s ease-in;}
 .con-slide-pic li a{float:left;}
-.con-slide-pic li a,.con-slide-pic li img{display:block;width:186px;height:260px;}
+.con-slide-pic li a,.con-slide-pic li img{display:block;width:186px;/*height:260px;*/}
 .con-slide-pic li i{background:rgba(0,0,0,0.2);position:absolute;top:0;left:0;width:100%;height:100%;display:block;}
 /*.con-slide-pic li:hover{transform:scale(1.1);}*/
 .con-slide-pic li:hover i{display:none;}
@@ -121,8 +121,8 @@
 
 .con-result{padding-top:50px;}
 .con-select{position:relative;width:414px;}
-.con-select-text{display:block;position:relative;text-indent:10px;height:28px;line-height:28px;border:1px solid #cdcdcd;color:#3b64c4;font-size:14px;background:#ececec;}
-.con-select-text em{float:left}
+.con-select-text{display:block;position:relative;text-indent:10px;height:28px;line-height:28px;border:1px solid #cdcdcd;color:#3b64c4;font-size:14px;background:#ececec; overflow: hidden;}
+.con-select-text em{float:left; padding-right: 10px;}
 .con-select-text i{position:absolute;width:10px;height:6px;top:50%;right:10px;margin-top:-3px;overflow:hidden;background:url(../img/arrow-j.png) no-repeat;}
 .con-select-item{position:absolute;top:29px;left:0;width:100%;background:#fff;z-index:5;}
 .con-select-list{border:1px solid #cdcdcd;max-height:180px;height:auto;_height:180px;overflow:auto}
@@ -296,7 +296,7 @@
 	.con-result .con-reg-more{ width: 17px; height: 29px; margin: 7px 3px 0 0;background: url("../img/arrow3.png") no-repeat;font-size: 0px;background-size: 100% 100%; overflow: hidden;}
 }
 @media (max-width: 1200px){
-	.second-box .con-select{ width: 394px; margin-left: 9px;}
+	.second-box .con-select{ float: left; width: auto; margin-left: 9px; margin-right: 9px;}
 	.second-box .con-reg-more{ width: 17px; height: 29px; margin: 7px 3px 0 0;background: url("../img/arrow3.png") no-repeat;font-size: 0px;background-size: 100% 100%; overflow: hidden;}
 }
 
@@ -317,7 +317,20 @@
 .carousel-inner>.active, .carousel-inner>.next, .carousel-inner>.prev{
     display: -webkit-box!important;
 }
-.con-slide .item a{display: block;-webkit-box-flex:1;position: relative;}
+
+.indexMain-wrap .carousel-inner>.active,
+.indexMain-wrap .carousel-inner>.next,
+.indexMain-wrap .carousel-inner>.prev{
+	display: -webkit-box!important;
+	display: -moz-box!important;
+	display: -ms-box!important;
+	display: -o-box!important;
+	display: box!important;
+
+}
+.indexMain-wrap .carousel-inner .item{width: 100%;}
+
+.con-slide .item a{display: block;-webkit-box-flex:1;-moz-box-flex:1;-ms-box-flex:1;box-flex:1;position: relative;}
 .con-slide .item a:after{content:'';position: absolute;left: 0px;top: 0px;width: 100%;height: 100%;background-color: rgba(0,0,0,0.3);}
 .con-slide .item a:hover:after{display: none;}
 .con-slide .item a:nth-child(2){margin: 0 4px;}
