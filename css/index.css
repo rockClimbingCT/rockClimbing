@@ -326,8 +326,9 @@
 	display: -ms-box!important;
 	display: -o-box!important;
 	display: box!important;
-	width: 100%;
+
 }
+.indexMain-wrap .carousel-inner .item{width: 100%;}
 
 .con-slide .item a{display: block;-webkit-box-flex:1;-moz-box-flex:1;-ms-box-flex:1;box-flex:1;position: relative;}
 .con-slide .item a:after{content:'';position: absolute;left: 0px;top: 0px;width: 100%;height: 100%;background-color: rgba(0,0,0,0.3);}
