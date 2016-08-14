@@ -398,3 +398,25 @@
 </body>
 </html>
 <script src="js/top.js"></script>
+<script>
+    (function(){
+        //直播评论
+        var send = $('.chat-send-btn'),
+                chatCon = $('.chat-list'),
+                ele = '<li>\
+                    <div class="chat-title clearfix">\
+                        <h3 class="name">游客1164565484</h3>\
+                        <span class="time">[2016-7-28 16:09]</span>\
+                    </div>\
+                    <div class="chat-content">{"data-con"}</div>\
+                </li>';
+
+        send.on('click', function(){
+            var sendCon = $.trim($('.chat-send-text').val());
+            if(sendCon != ''){
+                ele = ele.replace(/{"data-con"}/,sendCon);
+                chatCon.append(ele);
+            }
+        });
+    })();
+</script>
