@@ -52,13 +52,13 @@
 
 .explain-box .text-main section{ line-height: 24px;padding: 12px 0px; color: #333333;text-align: justify;}
 
-.table-wrap,.table{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box; overflow: hidden;margin-bottom: 0px;}
+.table-wrap,.table{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;margin-bottom: 0px;}
 .table-wrap thead th,.table-wrap tbody td{text-align: center;}
 .table-wrap tbody{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;}
 .table-wrap tbody tr:nth-child(odd){background-color: #fff;}
 .table-wrap tbody tr:nth-child(even){background-color: #f9f8ec;}
 .table>tbody>tr>td{border: 1px solid #d6dae3;font-size: 12px; color: #333333; padding-top: 16px;padding-bottom: 16px;}
-.table>thead>tr>th{border-bottom: none;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;font-size: 14px; color: #acc5ff;background-color: #3b64c4; padding-top: 17px;padding-bottom: 17px;vertical-align: middle;}
+.table>thead>tr>th{border-bottom: none;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;font-size: 14px; color: #acc5ff;background-color: #3b64c4; border-left: 1px solid #3b64c4; border-right: 1px solid #3b64c4;padding-top: 17px;padding-bottom: 17px;vertical-align: middle;}
 .table .yes{width: 14px; height: 14px;background: url("../img/yes.png") no-repeat;font-size: 0px;margin: 0 auto;}
 .table .pass{ color: #3b64c4;}
 
@@ -274,6 +274,10 @@
 .zhibo-sel-item:hover,
 .zhibo-sel-item.active{background-color: #3b64c4; border-color: #3b64c4; color: #fff;}
 
+@media (max-width: 768px) {
+    .zhibo-sel-item{margin-right: 3px;margin-left: 4px;}
+}
+
 @media (min-width: 1230px) {
     .zhibo-main-l-box{width: 830px;}
     .zhibo-main-r-box{width: 370px;}
@@ -311,9 +315,9 @@
 .ewm-wrap .thumbnail{background-color: transparent;margin-bottom: 0px;padding: 0px;}
 
 
-@media (max-width: 1200px) {
+/*@media (max-width: 1200px) {
     .zhibo-main-left{padding-right: 20px;}
-}
+}*/
 
 
 /*关于我们*/
