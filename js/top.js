@@ -8,7 +8,19 @@
         });
     });
 
+    //轮播图预览
+    $('.con-slide').each(function(){
+        $(this).find('.item a').on('click', function(){
+            $('.g-filter').css('height',$(document).height()).show();
+            $('.g-big-pic img').attr('src', $(this).attr('data-src'));
+            $('.g-big-pic').css('top', $(window).scrollTop()).show();
+        });
+    });
 
+    $('.g-filter,.g-big-pic').on('click', function(){
+        $('.g-big-pic').hide();
+        $('.g-filter').hide();
+    });
     //模拟select下拉
     $('.club-a-select').each(function(){
         var selects = $(this),
