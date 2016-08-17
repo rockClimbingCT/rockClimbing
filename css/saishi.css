@@ -14,9 +14,10 @@
 .content-bg{padding: 40px 0; background: url("../img/contentbg.jpg") center top;}
 .container-white{background: #ffffff;}
 
-.ssbm-title{ height: 30px;padding: 14px 20px 15px 20px; border-top: 1px solid rgba(104,132,232,0.1); border-bottom: 1px solid #d6dae3;}
+.ssbm-title{ /*height: 30px;*/padding: 14px 20px 15px 20px; border-top: 1px solid rgba(104,132,232,0.1); border-bottom: 1px solid #d6dae3;}
+.ssbm-title:after{ content: '';display: block;clear: both;}
 .ssbm-title .line{ float: left; width: 3px; height: 20px; background: url("../img/tip2.png") no-repeat; margin: 5px 10px 0 0;}
-.ssbm-title .head{ float: left;color:#3b64c4;font-size: 20px; line-height: 30px;}
+.ssbm-title .head{ float: left; color:#3b64c4;font-size: 20px; line-height: 30px; min-width: 60px;}
 .ssbm-title .english{ float: left; color: #999999;font-size: 12px; line-height: 20px;margin-top: 10px;margin-right: 2px;}
 .ssbm-title .english span{padding: 0 2px 0 6px;}
 
@@ -51,13 +52,13 @@
 
 .explain-box .text-main section{ line-height: 24px;padding: 12px 0px; color: #333333;text-align: justify;}
 
-.table-wrap,.table{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box; overflow: hidden;margin-bottom: 0px;}
+.table-wrap,.table{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;margin-bottom: 0px;}
 .table-wrap thead th,.table-wrap tbody td{text-align: center;}
 .table-wrap tbody{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;}
 .table-wrap tbody tr:nth-child(odd){background-color: #fff;}
 .table-wrap tbody tr:nth-child(even){background-color: #f9f8ec;}
 .table>tbody>tr>td{border: 1px solid #d6dae3;font-size: 12px; color: #333333; padding-top: 16px;padding-bottom: 16px;}
-.table>thead>tr>th{border-bottom: none;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;font-size: 14px; color: #acc5ff;background-color: #3b64c4; padding-top: 17px;padding-bottom: 17px;vertical-align: middle;}
+.table>thead>tr>th{border-bottom: none;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;font-size: 14px; color: #acc5ff;background-color: #3b64c4; border-left: 1px solid #3b64c4; border-right: 1px solid #3b64c4;padding-top: 17px;padding-bottom: 17px;vertical-align: middle;}
 .table .yes{width: 14px; height: 14px;background: url("../img/yes.png") no-repeat;font-size: 0px;margin: 0 auto;}
 .table .pass{ color: #3b64c4;}
 
@@ -94,9 +95,11 @@
 .yd-search{width:100%;display: box; display: -webkit-box;display: -moz-box;}
 
 .search-text{/*float: left; */height: 30px; padding: 0 10px;border: 1px solid #adc2f4;box-flex: 3;-webkit-box-flex: 3;-moz-box-flex: 3;color: #bbbbbb;}
-.search-btn{ /* float: left;width: 80px; */display:block; min-width: 38px;height: 32px;line-height: 32px;background: #3b64c4;font-size: 14px; color: #cedbf9;text-align: center;box-flex: 1;-webkit-box-flex: 1;-moz-box-flex: 1;}
+.search-text input{ display: block; width: 100%; height: 100%; border: none;}
+.search-btn{ /* float: left;width: 80px; */display:block; min-width: 38px;height: 32px;line-height: 32px;background: #3b64c4;font-size: 14px;text-align: center;box-flex: 1;-webkit-box-flex: 1;-moz-box-flex: 1;}
+.search-btn a{ display: block;width: 100%; height: 100%; color: #cedbf9;}
 
-.help-item{ float: left;box-flex: 1;-webkit-box-flex: 1;-moz-box-flex: 1;}
+.help-item{ box-flex: 1;-webkit-box-flex: 1;-moz-box-flex: 1;}
 .help-item i{ float: left; width: 17px; height: 16px;background: url("../img/help.png") no-repeat;margin: 8px 4px 0 24px;}
 .help-item p{ float: left; font-size: 14px; color: #41485b; line-height: 32px;}
 
@@ -271,6 +274,10 @@
 .zhibo-sel-item:hover,
 .zhibo-sel-item.active{background-color: #3b64c4; border-color: #3b64c4; color: #fff;}
 
+@media (max-width: 768px) {
+    .zhibo-sel-item{margin-right: 3px;margin-left: 4px;}
+}
+
 @media (min-width: 1230px) {
     .zhibo-main-l-box{width: 830px;}
     .zhibo-main-r-box{width: 370px;}
@@ -308,9 +315,9 @@
 .ewm-wrap .thumbnail{background-color: transparent;margin-bottom: 0px;padding: 0px;}
 
 
-@media (max-width: 1200px) {
+/*@media (max-width: 1200px) {
     .zhibo-main-left{padding-right: 20px;}
-}
+}*/
 
 
 /*关于我们*/
